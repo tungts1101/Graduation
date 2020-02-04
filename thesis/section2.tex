@@ -1,52 +1,85 @@
-\chapter{Giới thiệu}
-\section{Mở đầu}
-Ngày nay sự phát triển không ngừng của công nghệ thông tin và truyền thông thông tin, điện thoại di động đã trở thành vật dụng không thể thiếu của hầu như tất cả mọi người.
+%\chapter{Tối ưu hóa}
+%Tối ưu hóa là một tác vụ nhằm tìm kiếm cực trị (nhỏ nhất hoặc lớn nhất) cho một (hoặc các) mục tiêu, đồng thời thỏa mãn các ràng buộc nếu có.
+%\section{Tối ưu đa mục tiêu}
+%Tối ưu đa mục tiêu là tối ưu nhiều mục tiêu cùng một lúc, mà việc cải thiện kết quả của mục tiêu này sẽ làm xấu đi kết quả của mục tiêu khác (các mục tiêu xung đột với nhau). Thông thường, sẽ không tồn tại một lời giải tối ưu duy nhất cho bài toán. Thay vào đó là một tập các lời giải, được gọi là tập Pareto hay tập không bị trị (non-dominated solution ???). Như vậy, so với các bài toán tối ưu đơn mục tiêu, tối ưu đa mục tiêu bao hàm trong đó hai nhiệm vụ với mức độ quan trọng như nhau: tìm kiếm tập Pareto và sử dụng hệ quyết định để lựa chọn một lời giải phù hợp trong tập đó.
+%
+%
+%Hầu hết các vấn đề trong thực tế đều được mô hình hóa lại thành các bài toán đa mục tiêu. Ví dụ như tối thiểu hóa chi phí và tối đa hóa ích lợi khi mua xe, tối thiểu hóa nhiên liệu và tối đa hóa hiệu năng chạy của công cụ. Hay các ứng dụng thực tế sử dụng mạng cảm biến không dây cần đồng thời xét nhiều mục tiêu cùng một lúc như: tối thiểu hóa năng lượng, tối đa hóa thời gian sống, tối thiểu hóa độ nhiễu đều là các vấn đề có thể được mô hình hóa lại dưới dạng một bài toán tối ưu hóa đa mục tiêu.
+%
+%
+%Việc mô hình hóa vấn đề dưới dạng một bài toán với các mục tiêu, các ràng buộc, cận trên và cận dưới của các biến cũng quan trọng như việc giải quyết vấn đề, bởi mô hình hóa không phù hợp có thể dẫn tới sự không tương thích giữa lời giải và vấn đề, dẫn tới việc phải làm lại toàn bộ quá trình từ đầu. Có hai cách tiếp cận ở bước này. Thứ nhất là ưu tiên việc lựa chọn hơn là tối ưu, nghĩa là đơn giản hóa bài toán thành đơn mục tiêu. Việc này có thể dẫn tới lời giải không đáp ứng được yêu cầu của người dùng như đã đề cập, vì việc xác định nên ưu tiên mục tiêu nào hơn ngay từ đầu không phải là việc dễ dàng trong thực tế. Thứ hai là giải các mục tiêu đồng thời, và để quyền lựa chọn ưu tiên mục tiêu nào hơn cho hệ quyết định xử lý. Cách tiếp cận này phù hợp với thực tế, đồng thời giúp người dùng hiểu rõ hơn về vấn đề đang gặp phải, giúp lựa chọn chính xác và thông minh hơn.
 
-Theo số liệu thống kê được công bố tại Ngày Internet Việt Nam 2015 do Hiệp hội Internet Việt Nam tổ chức tại Hà Nội 19/11/2015. Hiện nay, Việt Nam có 120 triệu thuê bao di động và theo sô liệu thu thập được từ công ty Appota liên quan đến lĩnh vực di động tại Việt Nam, hiện nay nước ta có khoảng 22 triệu người sử dụng smartphone tức là cứ 4 người Việt lại có 1 người sử dụng điện thoại thông minh, chiếm khoảng 19\% thuê bao di động.
 
-Với một chiếc điện thoại di động, người dùng chẳng những có thể gọi điện, nhắn tin, phục vụ từ giải trí như: đọc tin tức (báo điện tử), nghe nhạc, xem phim, chơi game; cho đến đọc mail, viết ghi chú, và rất rất nhiều ứng dụng khác. Chính vì thế, chiếc điện thoại thông minh gần như là vật bất li thân của một bộ phân lớn người dùng.
+%Các bài toán tối ưu đa mục tiêu có thể được viết dưới dạng công thức cơ bản như sau:
+%\begin{equation}
+%\begin{multlined}
+%minimize 	\{f_{1}(x),f_{2}(x),...,f_{k}(x)\} \\ 
+%subject to x \in S
+%\end{multlined}
+%\end{equation}
  
-Đi kèm với sự phát triển đó, một vấn nạn nảy sinh theo đó là tin nhắn rác \cite{ma2016}.
-
-%Trong vài năm gần đây, tin nhắn rác thực sự là nỗi ám ảnh cho người dùng điện thoại di động. Cho dù cơ quan quản lý đã ra nhiều biện pháp xử lý nhưng vấn nạn này tiếp tục diễn ra và không có dấu hiệu suy giảm. Theo thống kê của công ty an ninh mạng BKAV, 6 tháng đầu năm 2015, tình hình phát tán tin nhắn rác không hề suy giảm mà tiếp tục gia tăng. Số lượng tin nhắn rác phát tán mỗi ngày lên tới 13.9 triệu tin, tăng hơn 0.4 triệu tin so với năm 2014. Ngoài ra, theo một thống kê khác của BKAV, khoảng 90\% thuê bao di động thường xuyên bị tin nhắn rác làm phiền, trong đó có 43\% là nạn nhân của các tin nhắn rác hằng ngày.
-
-Với giá thành cho mỗi tin nhắn khá rẻ, chỉ khoảng 200vnđ cho mỗi tin nhắn nội mạng và 250vnđ cho mỗi tin nhắn ngoại mạng (giá thuê bao trả trước của nhà mạng mobifone).
-
-Ngoài ra thì việc phát tán tin nhắn rác hàng loạt quá dễ dàng: có thể thông qua các đơn vị trung gian cung cấp dịch vụ phát tán tin nhắn rác dưới những cái tên như SMS marketing, tin nhắn marketing. Cước phí của dịch vụ này khá "phải chăng" như mạng Viettel - 45 đồng/tin, mạng Mobifone  - 40 đồng/tin, mạng VinaPhone - 27 đồng/tin. (Theo laodong.com.vn). Hoặc với các phần mềm gửi tin nhắn hàng loạt phổ biến như SMS Caster, TOP SMS Marketing, một cá nhân bình thường cũng có thể sử dụng và phát tán hàng nghìn tin nhắn chỉ với một cú click chuột.
-
-Hơn nữa, hình phạt cho việc phát tán tin nhắn rác là rất nhẹ và sự bất lực của các nhà mạng trong vấn đề này khiến tin nhắn rác ngày một nhiều. Gây rất nhiều phiền toái cho người sử dụng.
-
-Bắt đầu từ những vấn đề nêu trên, nhóm đã quyết định chọn đề tài: “Xây dựng bộ lọc tin nhắn rác cho điện thoại thông minh”. Đề tài nhằm mục đích xây dựng bộ lọc tin nhắn rác cho các tin nhắn tiếng Việt. Đáp ứng nhu cầu bức thiết của người sử dụng dịch vụ di động.
-
-\section{Yêu cầu và mục tiêu của đề tài}
-
-\subsection{Yêu cầu}
-
-Nghiên cứu thuật toán phân loại tin nhắn rác.
-
-Tạo ứng dụng chặn tin nhắn rác trên điện thoại thông minh (Android)
-
-\subsection{Mục tiêu}
-
-\subsubsection{Về kiến thức}
-
-Phân tích, giải quyết yêu cầu bài toán phân loại tin nhắn rác
-
-Nắm vững các thuật toán phân loại sử dụng
-
-Nắm các kỹ thuật xử lý văn bản: tách token, tính xác suất các token,\ldots
-
-Nắm các kiến thức lập trình di động (Android)
-
-\subsubsection{Về sản phẩm}
-
-Tối ưu hóa bộ lọc, ứng dụng
-
-Nắm được quy trình phát triển sản phẩm: phân tích - thiết kế - hiện thực - kiểm tra.
-
-Phát triển ứng dụng thực tế, hướng sử dụng, tương tác.
-
-\section{Bố cục của luận văn}
+%\section{Các cách tiếp cận}
+\chapter{Tối ưu đa mục tiêu trên cây tổng hợp dữ liệu}
+Sự tiến bộ của công nghệ giúp sản xuất các thiết bị cảm biến ngày một hiện đại, chiếm ít không gian, hiệu năng cao, giá thành rẻ, hỗ trợ triển khai số lượng lớn trên cùng một không gian. Đi liền với đó là khó khăn trong việc tận dụng hiệu quả các nút cảm biến khi năng lượng, khả năng tính toán, bộ nhớ vẫn còn hạn chế. Tổng hợp dữ liệu được nghiên cứu nhằm giải quyết khó khăn này. Nhiệm vụ này được định nghĩa như một quy trình toàn cục bao gồm việc tập trung và điều hướng thông tin thông qua các lớp mạng, xử lý dữ liệu tại các nút trung gian nhằm giảm thiểu việc tiêu thụ năng lượng, qua đó duy trì thời gian sống toàn mạng \cite{fasolo2007network}.
 
 
+Các tác vụ trong tổng hợp dữ liệu có thể kể đến: giao tiếp thông tin giữa các nút cảm biến, tính toán, tổng hợp tại một nút và lưu trữ dữ liệu. Trong thực tế, việc giao tiếp thông tin giữa các nút cảm biến thường tiêu hao nhiều năng lượng nhất. Tác vụ này bao gồm rất nhiều phương pháp điều hướng gói tin trong mạng, hỗ trợ cho việc tổng hợp dữ liệu từ nhiều nguồn và truyền tải tới một (hoặc nhiều) đích đến. Một số giao thức hỗ trợ giao tiếp thông tin trong mạng có thể kể đến: giao thức dạng cây, giao thức dạng cụm, giao thức đa đường và giao thức lai.
 
+
+Giao thức dạng cây là phương thức cổ điển để tổng hợp dữ liệu trong mạng cảm biến không dây, trong đó các nút cảm biến được tổ chức theo cấu trúc phân cấp và kế thừa. Trước hết, một cây với trạm tiếp nhận thông tin là nút gốc được xây dựng. Sau đó việc truyền và nhận thông tin được thực hiện tuần tự theo từng cấp, từ lá tới gốc. Giao thức này phù hợp để áp dụng trong các bài toán tối ưu hóa các hàm tổng hợp dữ liệu và và quản lý năng lượng \cite{fasolo2007network}. 
+
+
+Trong thực tế, không phải lúc nào tất cả các nút được triển khai cũng truyền tải dữ liệu, chỉ một số các nút được chỉ định là các nút cảm biến có nhiệm vụ thu thập dữ liệu xung quanh và truyền lên các cấp cao hơn. Bài toán lúc này trở thành bài toán cây Steiner: tìm cây khung nhỏ nhất chứa tập con từ tập các đỉnh cho trước. Bài toán này có độ khó NP-hoàn chỉnh \cite{karp1972reducibility}.
+
+
+Chương này tập trung vào bài toán tối ưu hóa đa mục tiêu trên mạng cảm biến không dây sử dụng giao thức cây để tổng hợp dữ liệu. Các phần sau của chương này có nhiệm vụ làm rõ các mục tiêu trong bài toán đề cập ở \cite{lu2014construction} và các nghiên cứu liên quan.
+
+
+Để thuận tiện cho các công thức được đề cập bên dưới, bài toán sẽ được phát biểu lại như sau.
+
+\textbf{Đầu vào}: 
+\begin{itemize}
+	\item Tập các nút được triển khai trên mạng N. Các nút được mô hình hóa bằng tọa độ không gian 3 chiều (x,y,z).
+	\item Tập các nút cảm biến và trạm trung tâm M (tập con của N).
+\end{itemize}
+
+\textbf{Đầu ra}: Cây khung nhỏ nhất chứa tất cả các nút thuộc M, có thể chứa hoặc không chứa các nút khác. Các nút ngoài tập M xuất hiện trong cây được gọi là nút Steiner. Tập chứa các nút này gọi là tập S.
+
+\textbf{Ràng buộc}:
+\begin{itemize}
+	\item Khoảng cách giữa các nút trong cây không lớn hơn r (bán kính truyền thông của các nút cảm biến).
+	\item Tất cả các nút lá trong cây đều thuộc M.
+\end{itemize}
+
+\section{Mô hình năng lượng}
+Mô hình mất mát năng lượng ở \cite{heinzelman2002application} được áo dụng. Công thức tính toán năng lượng nhận và truyền dữ liệu có dạng như sau:
+\begin{equation}
+E_{RX} = k \times E_{elec}.
+\end{equation}
+
+\begin{equation}
+E_{TX} = 
+\begin{cases}
+k \times E_{elec} + k \times \epsilon_{fs} \times d^2,  & d < d_0\\
+k \times E_{elec} + k \times \epsilon_{mp} \times d^4, & d \geq d_0.\\
+\end{cases}
+\end{equation}
+
+d là khoảng cách thực tế giữa các nút. $epsilon_{fs}$ và $epsilon_{mp}$ là các hằng số để tính toán năng lượng tiêu thụ khi truyền gói tin trong khoảng cách ngắn và khoảng cách dài.
+
+Năng lượng tổng hợp dữ liệu $E_{DA}$ tại các nút là một hằng số.
+
+\section{Tổng năng lượng tiêu thụ}
+\subsection{Mô tả}
+Vấn đề lớn nhất đối với các mạng cảm biến không dây là việc suy hao năng lượng của các nút cảm biến. Bởi các nút cảm biến dự trữ rất ít năng lượng, việc áp dụng các thuật toán nhằm tối thiểu hóa năng lượng tiêu thụ trong quá trình vận hành là vô cùng cần thiết. Năng lượng tiêu thụ của cây tổng hợp dữ liệu có thể được tính bằng tổng năng lượng trên tất cả các nút.
+
+\begin{equation}
+f_1(x) = \sum_{i=1}^{M + S} (E^i_{TX} + \sum_{j=1}^{C_{num_i}} (E_{RX}^j + E_{DA}^j))
+\end{equation}
+
+$C_{num_i}$ là tất các nút con của nút thứ i trong cây tổng hợp dữ liệu. Năng lượng tiêu thụ trên mỗi nút sẽ bằng tổng của năng lượng truyền gói tin cho nút cha của nó và năng lượng tổng hợp (bao gồm năng lượng nhận gói tin và năng lượng tổng hợp dữ liệu) từ tất cả các nút con.
+\subsection{Nghiên cứu liên quan}
+Trong cây tổng hợp dữ liệu, các nút trung gian đóng vai trò là nơi tổng hợp dữ liệu nhằm hạn chế hao tổn nếu phải truyền lại gói tin. Tuy đi kèm với đó là thời gian để nhận gói tin từ tất cả các nút con, và mất mát năng lượng để tổng hợp, nhưng thời gian và năng lượng hao phí này là nhỏ nếu so với việc phải truyền lại gói tin khi không tổng hợp trước. Quan sát này cho thấy cần phải cân nhắc lựa chọn nút nào là nút cha.
+
+
+Một quan sát quan trọng khác là khoảng cách ảnh hưởng trực tiếp tới năng lượng cần cấp phát để truyền gói tin. Nói cách khác, các nút ở gần (nếu còn đủ năng lượng) nên được ưu tiên làm nút cha để tối thiểu hóa năng lượng tiêu thụ. Quan sát này là tiền đề cho thuật toán đề xuất trong \cite{eskandari2008energy}. Trong đây, tác giả đề cập tới việc sử dụng ba tiêu chí với độ ưu tiên giảm dần để lựa chọn nút cha cho các nút như sau: năng lượng còn lại, khoảng cách truyền và số lượng nút con tối đa. Hai tham số đầu tiên đồng thời là tiêu chí lựa chọn nút cha của các thuật toán đề xuất trong \cite{lee2005energy} và \cite{lee2005lpt}. Tham số thứ ba được đề xuất để tránh tình trạng một nút có quá nhiều nút con dẫn tới mất mát năng lượng quá nhanh, hỗ trợ cho việc duy trì thời gian sống toàn mạng.
