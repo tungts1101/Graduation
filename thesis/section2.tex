@@ -83,3 +83,25 @@ Trong cây tổng hợp dữ liệu, các nút trung gian đóng vai trò là n�
 
 
 Một quan sát quan trọng khác là khoảng cách ảnh hưởng trực tiếp tới năng lượng cần cấp phát để truyền gói tin. Nói cách khác, các nút ở gần (nếu còn đủ năng lượng) nên được ưu tiên làm nút cha để tối thiểu hóa năng lượng tiêu thụ. Quan sát này là tiền đề cho thuật toán đề xuất trong \cite{eskandari2008energy}. Trong đây, tác giả đề cập tới việc sử dụng ba tiêu chí với độ ưu tiên giảm dần để lựa chọn nút cha cho các nút như sau: năng lượng còn lại, khoảng cách truyền và số lượng nút con tối đa. Hai tham số đầu tiên đồng thời là tiêu chí lựa chọn nút cha của các thuật toán đề xuất trong \cite{lee2005energy} và \cite{lee2005lpt}. Tham số thứ ba được đề xuất để tránh tình trạng một nút có quá nhiều nút con dẫn tới mất mát năng lượng quá nhanh, hỗ trợ cho việc duy trì thời gian sống toàn mạng.
+
+\section{Thời gian sống của mạng}
+\subsection{Mô tả}
+Một trong những mục tiêu khi triển khai mạng cảm biến không dây là duy trì thời gian sống toàn mạng. Bởi đặc điểm gồ ghề, khó tiếp cận của một số địa hình khi triển khai gây khó khăn cho việc thay thế, khắc phục sự cố như hết pin, tai nạn hay phá hoại từ bên ngoài mà việc duy trì tính ổn định là vô cùng cần thiết. Tùy thuộc vào yêu cầu thực tế mà định nghĩa thời gian sống của mạng cảm biến thay đổi: thời gian mà mạng cảm biến vẫn còn duy trì việc giao tiếp như thông thường, thời gian mà mạng cảm biến vẫn còn bao quát một không gian, thời gian từ khi bắt đầu tới khi việc thu thập dữ liệu lần đầu thất bại. Khi một nút cảm biến tiêu thụ hết năng lượng thì cây tổng hợp dữ liệu phải tự điều chỉnh lại. Thời gian sống của mạng, do đó, có thể tính toán qua thời gian sống tối thiểu của một nút trên cây.
+
+\begin{equation}
+f_2(x) = \frac{1}{min_{i \in M+S}  L^i}
+\end{equation}
+
+với
+\begin{equation}
+L^i = \frac{E^i_{residual}}{E^i_{TX} + \sum_{j=1}^{C_{num_i}} (E_{RX}^j + E_{DA}^j)}
+\end{equation}
+$E^i_{residual}$ là năng lượng còn lại của nút thứ i.
+\subsection{Nghiên cứu liên quan}
+Một trong những lý do chính dẫn tới việc tiêu hao năng lượng quá nhanh (dẫn tới việc nút "chết" trong mạng cảm biến) là do sự mất cân bằng trong việc tổng hợp và giao tiếp thông tin giữa các nút (một nút phải tổng hợp từ quá nhiều nút hoặc truyền dữ liệu tới một nút rất xa). Thuật toán tham lam trong \cite{liu2019heuristic} đề xuất một giải pháp đơn giản cho việc mất cân bằng giữa các nút trong mạng. Giải pháp trong bài báo trước hết là xây dựng một cây khung nhỏ nhất để đảm bảo khoảng cách giữa các nút không quá lớn, sau đó cân nhắc lựa chọn trong lân cận một nút còn lại nhiều năng lượng nhất là nút cha. Để điều chỉnh cho phù hợp với mô hình ban đầu, chúng ta sẽ loại bỏ các nút lá không phải là các nút cảm biến để tránh tình trạng dư thừa không cần thiết.
+
+
+Trong số các thuật toán điều hướng theo mô hình phân cấp, mô hình Phân cấp các cụm thích nghi với năng lượng thấp (Low Energy Adaptive Cluster Hierarchy - LEACH) là một mô hình vô cùng nổi tiếng \cite{heinzelman2000energy}. Trong đó, các nút cảm biến sẽ được phân làm các cụm phụ thuộc vào mức độ mạnh/yếu của tín hiệu nhận và lựa chọn một nút làm nút điều hướng của cụm đó. Việc này sẽ giúp tiết kiệm năng lượng một cách đáng kể bởi việc truyền thông tin chỉ được thực hiện bởi nút điều hướng chứ không phải tất cả các nút cảm biến. Việc lựa chọn nút nào làm nút đầu cũng sẽ được thay đổi liên tục để phù hợp với mục tiêu kéo dài thời gian sống toàn mạng.
+
+
+Có một số giải thuật cải tiến từ giải pháp trên, hầu hết là cách lựa chọn nút điều hướng sao cho phù hợp để duy trì sự cân bằng trong tiêu thụ năng lượng, qua đó kéo dài thời gian sống toàn mạng. \cite{bakaraniya2013k} đề xuất việc lựa chọn nút điều hướng và hình thành các cụm bằng thuật toán K-medoids, trong đó nút điều hướng là nút gần tâm cụm nhất tính toán theo khoảng cách Euclide. Trong khi đó \cite{arumugam2015ee} lại đề xuất việc sử dụng nút còn nhiều năng lượng nhất để làm nút điều hướng, và việc lựa chọn sẽ được thực hiện theo mỗi một chu kỳ truyền thông tin.
