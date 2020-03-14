@@ -105,3 +105,40 @@ Trong số các thuật toán điều hướng theo mô hình phân cấp, mô h
 
 
 Có một số giải thuật cải tiến từ giải pháp trên, hầu hết là cách lựa chọn nút điều hướng sao cho phù hợp để duy trì sự cân bằng trong tiêu thụ năng lượng, qua đó kéo dài thời gian sống toàn mạng. \cite{bakaraniya2013k} đề xuất việc lựa chọn nút điều hướng và hình thành các cụm bằng thuật toán K-medoids, trong đó nút điều hướng là nút gần tâm cụm nhất tính toán theo khoảng cách Euclide. Trong khi đó \cite{arumugam2015ee} lại đề xuất việc sử dụng nút còn nhiều năng lượng nhất để làm nút điều hướng, và việc lựa chọn sẽ được thực hiện theo mỗi một chu kỳ truyền thông tin.
+
+\section{Độ trễ khi tổng hợp dữ liệu}
+\subsection{Mô tả}
+Nhược điểm khi sử dụng mô hình tổng hợp dữ liệu dạng cây là thời gian tổng hợp dữ liệu lớn, gây chậm trễ trong quá trình xử lý thông tin. Theo mô hình được đề xuất, các nút trung gian không chỉ có vai trò chuyển phát dữ liệu lên nút cha mà còn phải tổng hợp dữ liệu từ các nút con. Một nút cũng chỉ có thể bắt đầu chuyển dữ liệu khi đã tổng hợp dữ liệu từ tất cả các nút con. Một thực tể rõ ràng là sự phân phối không đồng đều giữa các nút con sẽ dẫn tới tình trạng chờ đợi không cần thiết ở các nút còn lại. Các cách giải quyết nhược điểm này sẽ được bàn kĩ hơn ở phần bên dưới.
+
+Từ định nghĩa bên trên, công thức tính độ trễ cho toàn mạng sẽ tương ứng với tổng độ trễ trên từng lớp, và độ trễ trên mỗi lớp sẽ là độ trễ lớn nhất của một nút ở lớp đó.
+
+\begin{equation}
+f_3(x) = \sum_{i=1}^h lt(i-1) = \sum_{i=1}^h CN_{i-1} * \frac{Max(data_i)}{rate_i}
+\end{equation}
+$CN_{i-1}$ là số lượng nút con lớn nhất ứng với một nút ở lớp thứ $i-1$,  $Max(data_i)$ và $rate_i$ là kích thước lớn nhất mà dữ liệu có thể truyền và tốc độ truyền ở lớp thứ $i$.
+\subsection{Nghiên cứu liên quan}
+Trong \cite{youssef2007intelligent}, tác giả đã đề cập tới một phương pháp mang tính lý thuyết, sử dụng các nút cảm biến di chuyển được đóng vai trò như một cổng giao tiếp (gateway) để tổng hợp dữ liệu và chuyển tới các nút trung gian. Một cách dễ hình dung, các nút cảm biến sẽ được nhóm vào thành các cụm, và các cụm sẽ liên lạc với nhau thông qua các cổng giao tiếp. Số lượng cụm càng nhiều thì khả năng tổng hợp dữ liệu càng tốt (do số lượng nút ứng với từng cụm sẽ ít đi), tuy nhiên thời gian di chuyển từ nút lá tới trạm trung tâm lại tăng lên do gói tin cần đi qua nhiều trung gian. Giải thuật di truyền tối ưu hóa bước nhảy (GAHO - Genetic Algorithm for Hop count Optimization) được đề xuất trong \cite{youssef2007intelligent} được đề xuất nhằm giảm thiểu khoảng cách truyền này.
+
+
+Cũng sử dụng cách phân chia địa hình ra từng khu vực nhỏ, đề xuất trong \cite{wang2012minimizing} chia địa hình thành từng ô vuông với kích thước bằng nhau. Thuật toán phân cụm và chọn các nút điều hướng trong mỗi cụm chia thành các bước, bước sau sẽ là tổng hợp nhiều ô nhỏ từ bước trước thành một ô lớn hơn, cho tới khi toàn bộ mạng được liên kết với nhau thành một cây tổng hợp dữ liệu. Nhờ việc phân chia địa hình thành các ô vuông, khoảng cách từ các nút trong một ô tới nút điều hướng của cụm luôn được chặn trên (kích thước đường chéo của ô vuông đó), thuật toán tính được độ trễ tối đa dựa vào khoảng cách lớn nhất mà các nút trong mạng có thể truyền được.
+
+
+Một phương pháp khác để phân chia cụm được đề xuất trong \cite{xu2010delay}. Thuật toán chia làm hai giai đoạn, giai đoạn thứ nhất là phân chia ra thành các nút mạnh (dominators) và các nút yếu (dominatees), sau đó sử dụng các nút mạnh để truyền dữ liệu tới trạm xử lý trung tâm, các nút yếu thì kết nối với các nút mạnh. Độ mạnh của từng nút được tính bằng khoảng cách từ nút đó tới trạm xử lý, nút càng gần thì càng mạnh, và cách tìm ra các nút mạnh sử dụng thuật toán duyệt theo chiều rộng (BFS - Breath First Search).
+
+\section{Độ nhiễu trong giao tiếp}
+\subsection{Mô tả}
+Các nút trong mạng cảm biến sử dụng kết nối không dây để giao tiếp, hệ quả trực tiếp là phát sinh vấn đề nhiễu trong truyền và nhận dữ liệu. Vấn đề này xuất hiện khi trong bán kính giao tiếp của hai nút đang kết nối với nhau xuất hiện tín hiệu từ một nút thứ ba, gây xung đột trong quá trình truyền tin (vấn đề nút ẩn - hidden node problem). Xung đột xảy ra bắt các nút cảm biến phải truyền lại gói tin, gây tổn hao năng lượng và ảnh hưởng tới chất lượng tổng hợp. Giảm thiểu số lượng nút ảnh hương trong phạm vi kết nối giữa hai nút, do đó là một trong những mục tiêu cần tối ưu khi thiết kế mạng cảm biến không dây. Công thức được suy ra trực tiếp từ định nghĩa này:
+
+\begin{equation}
+f_4(x) = Max|Cov_e|
+\end{equation}
+
+với $$Cov_e = \{n \in V | \text{n là số lượng nút nằm trong D(x,$|x,y|$) hoặc D(y,$|y,x|$)} \}$$
+\subsection{Nghiên cứu liên quan}
+Nghiên cứu trong \cite{lou2011minimizing} đề xuất một giải pháp xây dựng cây tổng hợp dữ liệu giúp tối thiểu hóa độ nhiễu trung bình, qua đó tìm cận trên cho bài toán tối thiểu hóa độ nhiễu tối đa. Sử dụng cách tiếp cận với các nút phân bố trên địa hình 1 chiều (các nút xếp thẳng hàng trên một đường thẳng), sau đó giải quyết trên địa hình 2 chiều bằng cách kẻ các đường thằng đi qua các nút cảm biến, và xây dựng kết nối giữa các nút sao cho độ nhiễu không vượt quá số lượng kết nối tối đa của một nút.
+
+
+Cũng sử dụng các công thức của hình học không gian, nghiên cứu trong \cite{jang2010applications} phân chia địa hình ra thành từng cụm và lựa chọn đường đi tối ưu trong mỗi cụm. Có ba bước chính được sử dụng. Thứ nhất là mô hình Voronoi (Voronoi diagram) để tìm kiếm lân cận của các nút. Thứ hai là thuật toán tam giác hóa Delaunay (Delauney triangulation) để giảm thiểu độ dài kết nối giữa các nút (từ đó giúp giảm thiểu độ nhiễu trong quá trình truyền tin). Cuối cùng là sử dụng độ lệch chuẩn trong bán kính truyền như một tiêu chí để cắt giảm các kết nối có khoảng cách lớn. Cụ thể thì các cảm biến sẽ được đánh giá mức độ qua các kết nối của chúng, và tổng hợp mức độ từ hai đầu của một kết nối sẽ cho ra mức độ ưu tiên của kết nối đó. Các kết nối có mức độ ưu tiên cao sẽ bị loại bỏ.
+
+
+Nhóm tác giả trong \cite{burkhart2004does} đề xuất giải thuật Xây dựng rừng với độ nhiễu thấp (LIFE - Low Interference Forest Establisher). Mạng cảm biến không dây được mô hình thành một tập các cạnh sắp xếp theo thứ tự tăng dần của khoảng cách. Các cạnh được thêm vào khi hai nút cảm biến ứng với cạnh đó chưa được kết nối trong mạng. Làm liên tục như vậy cho đến khi xây dựng được một cây hoàn chỉnh.
