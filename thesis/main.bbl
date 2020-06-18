@@ -1,0 +1,162 @@
+\begin{thebibliography}{10}
+
+\bibitem{akkaya2005survey}
+Kemal Akkaya and Mohamed Younis.
+\newblock A survey on routing protocols for wireless sensor networks.
+\newblock {\em Ad hoc networks}, 3(3):325--349, 2005.
+
+\bibitem{arumugam2015ee}
+Gopi~Saminathan Arumugam and Thirumurugan Ponnuchamy.
+\newblock Ee-leach: development of energy-efficient leach protocol for data
+  gathering in wsn.
+\newblock {\em EURASIP Journal on Wireless Communications and Networking},
+  2015(1):1--9, 2015.
+
+\bibitem{bakaraniya2013k}
+Parul Bakaraniya and Sheetal Mehta.
+\newblock K-leach: An improved leach protocol for lifetime improvement in wsn.
+\newblock {\em International Journal of Engineering Trends and Technology
+  (IJETT)}, 4(5):1521--1526, 2013.
+
+\bibitem{benefit1evolution}
+Application Benefit.
+\newblock The evolution of wireless sensor networks.
+\newblock {\em Silicon Lab. Inc., Austin, TX, USA, White Paper Rev}, 1:1--5,
+  2013.
+
+\bibitem{burkhart2004does}
+Martin Burkhart, Pascal Von~Rickenbach, Rogert Wattenhofer, and Aaron
+  Zollinger.
+\newblock Does topology control reduce interference?
+\newblock In {\em Proceedings of the 5th ACM international symposium on Mobile
+  ad hoc networking and computing}, pages 9--19, 2004.
+
+\bibitem{eisa2013challenges}
+IAlaa Eisa, Hazem~M El-Bakry, and Samir M~Abd Elrazik.
+\newblock Challenges in wireless sensor networks.
+\newblock {\em International Journal of Advanced Research in Computer Science
+  and Technology}, 2013.
+
+\bibitem{eskandari2008energy}
+Zahra Eskandari, Mohammad~Hossein Yaghmaee, and AmirHossien Mohajerzadeh.
+\newblock Energy efficient spanning tree for data aggregation in wireless
+  sensor networks.
+\newblock In {\em 2008 Proceedings of 17th International Conference on Computer
+  Communications and Networks}, pages 1--5. IEEE, 2008.
+
+\bibitem{fasolo2007network}
+Elena Fasolo, Michele Rossi, Jorg Widmer, and Michele Zorzi.
+\newblock In-network aggregation techniques for wireless sensor networks: a
+  survey.
+\newblock {\em IEEE Wireless Communications}, 14(2):70--87, 2007.
+
+\bibitem{heinzelman2002application}
+Wendi~B Heinzelman, Anantha~P Chandrakasan, and Hari Balakrishnan.
+\newblock An application-specific protocol architecture for wireless
+  microsensor networks.
+\newblock {\em IEEE Transactions on wireless communications}, 1(4):660--670,
+  2002.
+
+\bibitem{heinzelman2000energy}
+Wendi~Rabiner Heinzelman, Anantha Chandrakasan, and Hari Balakrishnan.
+\newblock Energy-efficient communication protocol for wireless microsensor
+  networks.
+\newblock In {\em Proceedings of the 33rd annual Hawaii international
+  conference on system sciences}, pages 10--pp. IEEE, 2000.
+
+\bibitem{jang2010applications}
+Hung-Chin Jang.
+\newblock Applications of geometric algorithms to reduce interference in
+  wireless mesh network.
+\newblock {\em arXiv preprint arXiv:1003.3569}, 2010.
+
+\bibitem{karp1972reducibility}
+Richard~M Karp.
+\newblock Reducibility among combinatorial problems.
+\newblock In {\em Complexity of computer computations}, pages 85--103.
+  Springer, 1972.
+
+\bibitem{koviwireless}
+Sai~Krishna Kovi, Pavankumar Jangam, Sai Kumar~Goud Kosgi, and MD~Frostburg.
+\newblock Wireless sensor networks and applications.
+
+\bibitem{lee2005energy}
+Marc Lee and Vincent~WS Wong.
+\newblock An energy-aware spanning tree algorithm for data aggregation in
+  wireless sensor networks.
+\newblock In {\em PACRIM. 2005 IEEE Pacific Rim Conference on Communications,
+  Computers and signal Processing, 2005.}, pages 300--303. IEEE, 2005.
+
+\bibitem{lee2005lpt}
+Marc Lee and Vincent~WS Wong.
+\newblock Lpt for data aggregation in wireless sensor networks.
+\newblock In {\em GLOBECOM'05. IEEE Global Telecommunications Conference,
+  2005.}, volume~5, pages 6--pp. IEEE, 2005.
+
+\bibitem{liu2019heuristic}
+Bing-Hong Liu, Van-Trung Pham, Tu~N Nguyen, and Yi-Sheng Luo.
+\newblock A heuristic for maximizing the lifetime of data aggregation in
+  wireless sensor networks.
+\newblock {\em arXiv preprint arXiv:1910.05310}, 2019.
+
+\bibitem{lou2011minimizing}
+Tiancheng Lou, Haisheng Tan, Yuexuan Wang, and Francis~CM Lau.
+\newblock Minimizing average interference through topology control.
+\newblock In {\em International Symposium on Algorithms and Experiments for
+  Sensor Systems, Wireless Networks and Distributed Robotics}, pages 115--129.
+  Springer, 2011.
+
+\bibitem{lu2014construction}
+Yao Lu, Jianping Chen, Ioan Comsa, Pierre Kuonen, and Beat Hirsbrunner.
+\newblock Construction of data aggregation tree for multi-objectives in
+  wireless sensor networks through jump particle swarm optimization.
+\newblock {\em Procedia Computer Science}, 35:73--82, 2014.
+
+\bibitem{mukherjee2013evaluation}
+Sandip Mukherjee, Pawan~Kumar Joshi, Samadrita Mukherjee, Aniruddha Ghosh,
+  RD~Garg, and Anirban Mukhopadhyay.
+\newblock Evaluation of vertical accuracy of open source digital elevation
+  model (dem).
+\newblock {\em International Journal of Applied Earth Observation and
+  Geoinformation}, 21:205--217, 2013.
+
+\bibitem{ramson2017applications}
+SR~Jino Ramson and D~Jackuline Moni.
+\newblock Applications of wireless sensor networks—a survey.
+\newblock In {\em 2017 International Conference on Innovations in Electrical,
+  Electronics, Instrumentation and Media Technology (ICEEIMT)}, pages 325--329.
+  IEEE, 2017.
+
+\bibitem{sedgewick2011algorithms}
+Robert Sedgewick and Kevin Wayne.
+\newblock {\em Algorithms}.
+\newblock Addison-wesley professional, 2011.
+
+\bibitem{tam2018improving}
+Nguyen~Thi Tam, Dang~Thanh Hai, et~al.
+\newblock Improving lifetime and network connections of 3d wireless sensor
+  networks based on fuzzy clustering and particle swarm optimization.
+\newblock {\em Wireless Networks}, 24(5):1477--1490, 2018.
+
+\bibitem{wang2012minimizing}
+Baobing Wang and John~S Baras.
+\newblock Minimizing aggregation latency under the physical interference model
+  in wireless sensor networks.
+\newblock In {\em 2012 IEEE Third International Conference on Smart Grid
+  Communications (SmartGridComm)}, pages 19--24. IEEE, 2012.
+
+\bibitem{xu2010delay}
+XiaoHua Xu, Xiang~Yang Li, XuFei Mao, Shaojie Tang, and ShiGuang Wang.
+\newblock A delay-efficient algorithm for data aggregation in multihop wireless
+  sensor networks.
+\newblock {\em IEEE transactions on parallel and distributed systems},
+  22(1):163--175, 2010.
+
+\bibitem{youssef2007intelligent}
+Waleed Youssef and Mohamed Younis.
+\newblock Intelligent gateways placement for reduced data latency in wireless
+  sensor networks.
+\newblock In {\em 2007 IEEE International Conference on Communications}, pages
+  3805--3810. IEEE, 2007.
+
+\end{thebibliography}
