@@ -1,58 +1,82 @@
-% README
-% ------
-% apt install texlive-full texlive-science
-% thieu gi thieu apt search <cai bi thieu> hoac tra google
-% sau do dien vao cac file input va compile file main
 \documentclass{hust}
 \usepackage[utf8]{vietnam}
 \usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{chngcntr}
+\usepackage{mathptmx}
+\graphicspath{ {./images/} }
+\usepackage{float}
 \usepackage[nopostdot, style=longheaderborder, nonumberlist, toc, acronym]{glossaries}
 \usepackage{tabularx}
-\usepackage{multirow}
 \usepackage{changepage}
-\usepackage{float}
+\usepackage[font=footnotesize,labelfont=bf]{caption}
+\usepackage[
+top=2cm,
+bottom=2cm,
+left=3.5cm,
+right=2.5cm,
+headheight=17pt, % as per the warning by fancyhdr
+includehead,includefoot,
+heightrounded, % to avoid spurious underfull messages
+]{geometry}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\footrulewidth}{0pt}
+\fancyhead[LE,RO]{\leftmark}
+\fancyfoot[CE,CO]{\thepage}
 
 \usepackage{algorithm}
-%\floatname{algorithm}{Procedure}
 
 \makenoidxglossaries
 \loadglsentries{glossaries}
 
 \graphicspath{ {./images/} }
 
-%\input{acro}
+\usepackage{algorithm}
+
+%\makenoidxglossaries
+%\loadglsentries{glossaries}
+
+\graphicspath{ {./images/} }
+
 \begin{document}
-
-\thispagestyle{empty}
-
-\thisfancypage{
-	\setlength{\fboxrule}{1pt}
-	\doublebox}{}
-\begin{center}
+	\pagenumbering{roman}
+	\newtheorem{definition}{Định nghĩa}[section]
 	
-	{\setstretch{1.4}
-		. \\
-		{\fontsize{12}{12}\fontfamily{cmr}\selectfont ĐẠI HỌC BÁCH KHOA HÀ NỘI\\VIỆN CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG}\\
-		\textbf{------------*******---------------}\\[1cm]
-		\includegraphics[width=3cm]{logo}
-		\centering
-		\\[1cm]
-		{\fontsize{25}{43}\fontfamily{cmr}\selectfont ĐỒ ÁN TỐT NGHIỆP}\\[0.1cm]
-		{\fontsize{17}{10}\fontfamily{cmr}\fontseries{b}\selectfont CHUYÊN NGÀNH KHOA HỌC MÁY TÍNH}\\[0.9cm]
-		{\fontsize{20}{26}\fontfamily{phv}\selectfont Giải thuật di truyền tính toán đa mục tiêu trên mạng cảm biến không dây}\\[2cm]
+	\thispagestyle{empty}
+	
+	\thisfancypage{
+		\setlength{\fboxrule}{1pt}
+		\doublebox}{}
+	\begin{center}
 		
-		\begin{tabular}{l c l}
-			\textbf{Họ và tên} & : & Trần Sơn Tùng \\ 
-			\textbf{MSSV} & : & 20154282  \\ 
-			\textbf{Lớp} & : & AS - K60  \\
-			\textbf{GVHD} & : &  TS. Trần Vĩnh Đức   \\
-		\end{tabular} \\[1.5cm]
-	}
-	
-	\fontsize{17}{19}\fontfamily{cmr}\selectfont Hà Nội, tháng 6 năm 2020
-\end{center}
-
-\newpage
+		{\setstretch{1.4}
+			{
+				\fontsize{12}{12}\selectfont ĐẠI HỌC BÁCH KHOA HÀ NỘI\\VIỆN CÔNG NGHỆ THÔNG TIN VÀ TRUYỀN THÔNG}\\
+			\textbf{------------*******---------------}\\[1cm]
+			\includegraphics[width=3cm]{logo}
+			\centering
+			\\[1cm]
+			{\fontsize{25}{43}\selectfont \textbf{ĐỒ ÁN TỐT NGHIỆP}}\\[0.2cm]
+			{\fontsize{20}{26}\selectfont \textbf{Giải thuật di truyền tính toán đa mục tiêu trên mạng cảm biến không dây}}\\[0.4cm]
+			{\fontsize{14}{20}\selectfont \textbf{TRẦN SƠN TÙNG} \\
+				\fontsize{12}{18}\selectfont tung.ts154282@sis.hust.edu.vn}\\[0.4cm]
+			
+			{\fontsize{17}{10}\fontseries{b}\selectfont Ngành Công nghệ thông tin}\\[1cm]
+			
+			
+			\begin{tabular}{l c l l}
+				\textbf{Giảng viên hướng dẫn} & : &  TS. Trần Vĩnh Đức & \text{\_\_\_\_\_\_\_\_\_\_\_\_\_} \\
+				& & & \fontsize{10}{12}\selectfont Chữ ký của GVHD\\
+				\textbf{Bộ môn} & : &  Khoa học máy tính \\
+				\textbf{Viện} & : &  Công nghệ thông tin và truyền thông \\
+			\end{tabular} \\[1.6cm]
+		}
+		
+		\fontsize{17}{19}\fontfamily{cmr}\selectfont Hà Nội, tháng 6 năm 2020
+	\end{center}
+\pagebreak
 
 \thispagestyle{fancy}
 \addcontentsline{toc}{chapter}{Thẻ nhiệm vụ tốt nghiệp}
@@ -67,18 +91,17 @@
 		\item \textbf{Email:} tung.ts154282@sis.hust.edu.vn
 		\item \textbf{Chương trình:} Kỹ sư
 	\end{multicols}
-	% \item \textbf{Graduation Thesis conducted in:} Department of Computer Science - School of Information and Communication Technology.
 	\item \textbf{Thời hạn:} Từ tháng 1 năm 2019 đến tháng 6 năm 2020
 \end{itemize}
 \section*{Mục tiêu chính của đồ án}
 \begin{enumerate}
-	\item Nghiên cứu về tính toán đa mục tiêu trên mạng cảm biến không dây.
-	\item Nghiên cứu và áp dụng giải thuật di truyền để tính toán đa mục tiêu trên mạng cảm biến không dây.
+	\item Nghiên cứu về tối ưu đa mục tiêu trên mạng cảm biến không dây.
+	\item Nghiên cứu và áp dụng giải thuật di truyền để giải bài toán tối ưu đa mục tiêu trên mạng cảm biến không dây.
 \end{enumerate}
 
 \section*{Nhiệm vụ cụ thể của đồ án}
 \begin{enumerate}
-	\item Nghiên cứu về các mục tiêu cần quan tâm khi thiết kế mạng cảm biến không dây.
+	\item Nghiên cứu về các mục tiêu cần tối ưu khi thiết kế mạng cảm biến không dây.
 	\item Áp dụng giải thuật di truyền và giải thuật di truyền sắp xếp không trội để tính toán đa mục tiêu trên mạng cảm biến không dây.
 	\item Thực nghiệm, đối chiếu và phân tích kết quả thu được.
 \end{enumerate}
@@ -154,9 +177,9 @@ Tôi muốn giành lời cảm ơn trước hết cho thầy Trần Vĩnh Đức
 
 \begin{itemize}
 	\item \textbf{Chương 1} Giới thiệu tổng quan về mạng cảm biến không dây.
-	\item \textbf{Chương 2} Giới thiệu các mục tiêu cần tối ưu trên mạng cảm biến không dây.
+	\item \textbf{Chương 2} Giới thiệu bài toán tối ưu cây tổng hợp dữ liệu đa mục tiêu.
 	\item \textbf{Chương 3} Áp dụng giải thuật di truyền và giải thuật di truyền sắp xếp không trội giải bài toán tối ưu đa mục tiêu.
-	\item \textbf{Chương 4} Trình bày kết quả thực nghiệm, phân tích và đánh giá hiệu quả của giải thuật di truyền và giải thuật di truyền sắp xếp không trội.
+	\item \textbf{Chương 4} Trình bày kết quả thực nghiệm, phân tích hiệu quả của giải thuật di truyền và giải thuật di truyền sắp xếp không trội.
 \end{itemize}
 
 \pagebreak
@@ -173,28 +196,19 @@ Tôi muốn giành lời cảm ơn trước hết cho thầy Trần Vĩnh Đức
 
 \acresetall
 
+\pagenumbering{arabic}
+\setcounter{page}{1}
 \chapter{Giới thiệu}
 \Gls{WSN} xuất hiện lần đầu vào năm 1950, biết tới với tên gọi là Hệ thống giám sát âm thanh (Sound Surveillance System). Đây là hệ thống được quân đội Mỹ triển khai nhằm truy tìm tàu ngầm của quân Xô-viết. Hệ thống này vẫn còn tồn tại cho tới ngày nay, nhưng phục vụ cho mục đích quan sát thế giới động vật dưới biển và tình trạng núi lửa.
 Nhằm hỗ trợ việc triển khai mạng cảm biến không dây, Chương trình nghiên cứu hệ thống phòng thủ cấp cao (Defense Advanced Research Projects Agency) đã triển khai Mạng cảm biến phân tán (Distributed Sensor Network). Sự ra đời của chương trình này cùng với việc thúc đẩy nghiên cứu từ các học viện và trường đại học lớn, công nghệ mạng cảm biến không dây sớm trở thành một lĩnh vực nghiên cứu khoa học. Chính phủ và các trường đại học bắt đầu sử dụng mạng cảm biến cho việc đo đạc chất lượng không khí, phát hiện thảm họa như cháy rừng, ngập lụt hay giám sát cấu trúc. Các tập đoàn lớn cũng bắt đầu sử dụng mạng cảm biến cho việc phân bố năng lượng, tự động hóa trong nhà máy.
-Mặc dù cung cấp những tính năng và hiệu suất tuyệt vời, chi phí đắt đỏ và cấu hình phức tạp khiến cho mạng cảm biến chỉ được ứng dụng trong quân sự, nghiên cứu khoa học hoặc các ngành công nghiệp nặng. Nhằm mở rộng thị phần của mạng cảm biến để đáp ứng yêu cầu từ người sử dụng phổ thông, như các hộ gia đình hay các công ty nhỏ, lẻ, một số tổ chức nghiên cứu chuyên môn đã được thành lập. Mục tiêu chính của họ là giảm giá thành và năng lượng tiêu thụ, đồng thời đơn giản hóa quy trình phát triển và bảo trì. Điều này có tác dụng kích thích thị trường dịch chuyển từ các ứng dụng quân sự trên chiến trường hay các thí nghiệm phức tạp trong phòng nghiên cứu thành các ứng dụng thực tiễn và thường thấy trong cuộc sống.
-\cite{benefit1evolution}
-
-
-%Hình 1.1 là mô tả của sự dịch chuyển thị phần của mạng cảm biến không dây. Có thể thấy ngày nay, người sử dụng thông thường chiếm thị phần lớn nhất, cho thấy mức độ phổ biến của mạng cảm biến không dây.
-%
-%
-%\begin{figure}[htb]
-%	\center{\includegraphics[scale=0.6]
-%		{images/wsn_debut.jpeg}}
-%	\caption{\label{fig:my-label} Chuyển dịch thị phần của mạng cảm biến không dây}
-%\end{figure}
+Mặc dù cung cấp những tính năng và hiệu suất tuyệt vời, chi phí đắt đỏ và cấu hình phức tạp khiến cho mạng cảm biến chỉ được ứng dụng trong quân sự, nghiên cứu khoa học hoặc các ngành công nghiệp nặng. Nhằm mở rộng thị phần của mạng cảm biến để đáp ứng yêu cầu từ người sử dụng phổ thông, như các hộ gia đình hay các công ty nhỏ, lẻ, một số tổ chức nghiên cứu chuyên môn đã được thành lập. Mục tiêu chính của họ là giảm giá thành và năng lượng tiêu thụ, đồng thời đơn giản hóa quy trình phát triển và bảo trì. Điều này có tác dụng kích thích thị trường dịch chuyển từ các ứng dụng quân sự trên chiến trường hay các thí nghiệm phức tạp trong phòng nghiên cứu thành các ứng dụng thực tiễn và thường thấy trong cuộc sống \cite{benefit1evolution}.
 
 Trong khi thiết kế mạng cảm biến không dây, một vấn đề hay gặp phải là sự xung đột giữa các mục tiêu. Một ví dụ cho vấn đề này là khi tìm cách tăng thời gian sống của mạng qua việc giảm năng lượng tiêu thụ trên mỗi nút, một số nút trung gian được sử dụng nhằm thu hẹp khoảng cách truyền tin. Việc sử dụng các nút trung gian này làm tăng độ trễ của đường truyền. Một số mục tiêu thường được cân nhắc khi thiết kế mạng cảm biến bao gồm: thời gian sống của mạng, độ bao phủ, và độ trễ.
 Chương đầu của đồ án đóng vai trò như cái nhìn tổng quan về mạng cảm biến không dây. Phần 1 sẽ bao gồm cấu tạo của một mạng cảm biến, các loại mạng khác nhau, giao thức mạng thường được sử dụng, các ứng dụng và khó khăn hiện thời khi triển khai mạng cảm biến không dây. Nhằm hỗ trợ cho việc giải thích chi tiết trong các chương sau, phần 1.2 sẽ là những kiến thức về khoa học máy tính nhằm giải quyết thách thức trong mạng cảm biến không dây được đề ra ở chương 2, cụ thể bao gồm: lý thuyết đồ thị và một số thuật toán sử dụng trên đồ thị, kiến thức về cấu trúc dữ liệu cây và bài toán cây Steiner để mô hình hóa bài toán mạng cảm biến không dây trong thực tế.
 
 \section{Mạng cảm biến không dây}
 \subsection{Định nghĩa và phân loại}
-Mạng cảm biến không dây là một tập hợp các nút cảm biến tự động ghi lại dữ liệu của môi trường xung quanh, sau đó tổng hợp lại tại một trạm trung tâm để xử lý nhằm phục vụ cho mục đích giám sát, kiểm tra.\cite{koviwireless}
+Mạng cảm biến không dây là một tập hợp các nút cảm biến tự động ghi lại dữ liệu của môi trường xung quanh, sau đó tổng hợp lại tại một trạm trung tâm để xử lý nhằm phục vụ cho mục đích giám sát, kiểm tra \cite{koviwireless}.
 
 
 Trong \cite{koviwireless}, nhóm tác giả phân loại mạng cảm biến theo địa hình được triển khai:
@@ -206,10 +220,10 @@ Trong \cite{koviwireless}, nhóm tác giả phân loại mạng cảm biến the
 	\item Mạng cảm biến di động: Các nút cảm biến trong mô hình mạng này có thể di chuyển để trao đổi thông tin hoặc sạc năng lượng. Khó khăn đặt ra trong mô hình này là tính toán độ bao phủ của mạng, giao thức truyền tin hợp lý, ít tiêu tốn năng lượng và chu trình sạc năng lượng của các nút cảm biến.
 \end{itemize}
 
-Hình \ref{fig:wsn-types} là hình ảnh trực quan về địa hình được triển khai và các nút cảm biến được cài đặt trong thực tế.
+Hình \ref{fig:wsn-types} mô tả về địa hình được triển khai và các nút cảm biến được cài đặt trong thực tế.
 
 \begin{figure}[htb]
-	\center{\includegraphics[width=15cm]
+	\center{\includegraphics[width=0.8\textwidth]
 		{images/wsn_types.png}}
 	\caption{Các loại mạng cảm biến không dây}\label{fig:wsn-types}
 \end{figure}
@@ -225,7 +239,7 @@ Thành phần nhỏ nhất của một mạng cảm biến không dây là nút 
 Vì thương được lắp đặt tại các vị trí khó tiếp cận, việc sạc hay thay pin dường như là không khả thi, bởi vậy mà nguồn năng lượng chính của các nút cảm biến thường sử dụng là pin. Các nút cảm biến tiêu tốn năng lượng cho các nhiệm vụ khác nhau, bao gồm: cảm ứng, xử lý dữ liệu và truyền dữ liệu. Trong đó việc truyền dữ liệu tiêu tốn năng lượng nhiều nhất.
 
 
-Hình \ref{fig:wsn-nodes} là mô tả cấu trúc của một nút cảm biến trong mạng cảm biến không dây.
+Hình \ref{fig:wsn-nodes} mô tả cấu trúc của một nút cảm biến trong mạng cảm biến không dây.
 
 
 \begin{figure}[htb]
@@ -235,7 +249,7 @@ Hình \ref{fig:wsn-nodes} là mô tả cấu trúc của một nút cảm biến
 \end{figure}
 
 \subsection{Các giao thức truyền tin của mạng cảm biến}
-Mạng cảm biến không dây có thể được triển khai bằng nhiều giao thức: \cite{akkaya2005survey}
+Mạng cảm biến không dây có thể được triển khai bằng nhiều giao thức \cite{akkaya2005survey}:
 
 
 \begin{itemize}
@@ -247,17 +261,17 @@ Mạng cảm biến không dây có thể được triển khai bằng nhiều g
 	\item Dạng kết nối đầy đủ (Fully connected network): Giao thức mạng mà một nút kết nối với tất cả các nút khác trong mạng. Số lượng nút và số lượng kết nối giữa tất cả các nút tăng theo hàm lũy thừa khiến cho việc tính toán đường đi tối ưu cho gói tin rất khó khăn.
 \end{itemize}
 
-Hình \ref{fig:wsn-topology} là tổng hợp của các giao thức thường được triển khai trong thực tế.
+Hình \ref{fig:wsn-topology} tổng hợp của các giao thức thường được triển khai trong thực tế.
 
 
 \begin{figure}[htb]
-	\center{\includegraphics[width=15cm, height=8cm]
+	\center{\includegraphics[width=0.8\textwidth, height=8cm]
 		{images/wsn_topology.png}}
 	\caption{Các giao thức mạng trong thực tế}\label{fig:wsn-topology}
 \end{figure}
 
 \subsection{Ứng dụng của mạng cảm biến không dây}
-Mạng cảm biến không dây từ những ngày đầu chỉ được ứng dụng trong quân sự và khoa học nay đã phát triển rộng rãi và cho thấy tác dụng lớn khi áp dụng vào trong những mặt khác của đời sống như: nông nghiệp, y tế, môi trường, xây dựng. Việc nhận thấy tiềm năng của mạng cảm biến không dây trong nhiều lĩnh vực của xã hội thúc đẩy khoa học và doanh nghiệp đẩy mạnh nghiên cứu, hợp tác để cho ra đời những nút cảm biến hiệu quả hơn, tiết kiệm hơn và các cơ chế triển khai mạng cảm biến tối ưu hơn. Dưới đây là bản nghiên cứu tác động của mạng cảm biến không dây trong các lĩnh vực khác nhau:\cite{ramson2017applications}
+Mạng cảm biến không dây từ những ngày đầu chỉ được ứng dụng trong quân sự và khoa học nay đã phát triển rộng rãi và cho thấy tác dụng lớn khi áp dụng vào trong những mặt khác của đời sống như: nông nghiệp, y tế, môi trường, xây dựng. Việc nhận thấy tiềm năng của mạng cảm biến không dây trong nhiều lĩnh vực của xã hội thúc đẩy khoa học và doanh nghiệp đẩy mạnh nghiên cứu, hợp tác để cho ra đời những nút cảm biến hiệu quả hơn, tiết kiệm hơn và các cơ chế triển khai mạng cảm biến tối ưu hơn. Dưới đây là bản nghiên cứu tác động của mạng cảm biến không dây trong các lĩnh vực khác nhau \cite{ramson2017applications}:
 \begin{itemize}
 	\item Nông nghiệp: Các mạng cảm biến kết hợp của nhiều loại như dưới đất, trong lòng đất hay trong nước cung cấp thông tin cần thiết cho canh tác như nhiệt độ, độ ẩm, chất lượng đất, số lượng khí CO2 trong lòng đất, chất lượng nước. Dữ liệu được thu thập qua camera hoặc cảm biến, sau đó được xử lý và đưa tới chuyên gia để đưa ra quyết định sau cùng. Nhờ thông tin được truyền tải theo thời gian thực mà chuyên gia có thể phân tích tình trạng cây trồng, đất đai, nguồn nước để có cơ chế điều chỉnh thích hợp. Ngoài việc ghi nhận thông tin, các mạng cảm biến còn đóng vai trò tự động hóa quy trình canh tác, điều khiển để giảm thiểu công sức lao động, tăng năng suất và độ chính xác, giống như hệ thống thời gian thực được điều khiển bằng cảm biến tại các khu trồng trọt trong nhà kính.
 	\item Môi trường: Nhờ việc ghi nhận dữ liệu và truyền tải qua Internet mà có thể dự đoán trước các thiên tai tự nhiên như động đất, sóng thần, lũ lụt hay tai nạn lao động như rò rỉ khí ga, rò điện, qua đó giảm thiểu thiệt hại về người và của. Các ứng dụng thực tiễn trong môi trường có thể kể đến giám sát mức độ ô nhiễm môi trường, giám sát chất lượng nước và khí thải trong nhà máy, dự đoán nguy hiểm trong hầm mỏ như khí độc, nguồn lửa ngầm hoặc sập hầm. 
@@ -267,7 +281,7 @@ Mạng cảm biến không dây từ những ngày đầu chỉ được ứng d
 \end{itemize}
 
 \subsection{Khó khăn}
-Như đã đề cập ở đầu chương, việc được ứng dụng rộng rãi ở nhiều lĩnh vực thúc đẩy những tiến bộ khoa học nhưng đồng thời cũng mang tới những thách thức khi triển khai một mạng cảm biến không dây trong thực tế. \cite{eisa2013challenges}
+Như đã đề cập ở đầu chương, việc được ứng dụng rộng rãi ở nhiều lĩnh vực thúc đẩy những tiến bộ khoa học nhưng đồng thời cũng mang tới những thách thức khi triển khai một mạng cảm biến không dây trong thực tế \cite{eisa2013challenges}. 
 
 
 Một trong những thách thức lớn nhất và được ưu tiên hàng đầu khi thiết kế mạng cảm biến không dây là duy trì thời gian sống. Bởi đặc tính khó tiếp cận của môi trường đặt các nút cảm biến (trong lòng đất, trên chiến trường) vậy nên việc sạc pin cho các mạng cảm biến hay đổi pin mới dường như là không thể. Hơn thế nữa với các giao thức mạng hình cây hoặc hình vòng, một nút chết trong mạng có thể dẫn tới việc tái định tuyến cho toàn bộ các nút khác. Từ hai nguyên do trên mà trước khi bắt đầu triển khai các nút cảm biến (có thể là chọn vị trí đặt hoặc xác định thuật toán định tuyến, giao thức truyền, giao thức xử lý xung đột), các kĩ sư đều phải lưu ý tới việc giảm thiểu năng lượng tiêu thụ. Nhưng bởi số lượng kênh hạn chế, lại cần phải được chia sẻ giữa rất nhiều nút mạng, điều này có thể dẫn tới độ trễ lớn nếu quá ưu tiên vào việc bảo vệ năng lượng, khiến cho thông tin trở nên vô giá trị. Cân bằng giữa việc duy trì thời gian sống và đảm bảo hiệu quả trong giao tiếp là một bài toán khó, với những yêu cầu thay đổi tùy vào tình hình thực tế.
@@ -287,12 +301,12 @@ Hình \ref{fig:undirected_graph} là một đồ thị đơn vô hướng.
 
 
 \begin{figure}[htb]
-	\center{\includegraphics[width=15cm, height=5cm]
+	\center{\includegraphics[width=0.8\textwidth, height=5cm]
 		{images/undirected_graph.png}}
 	\caption{Đồ thị đơn vô hướng}\label{fig:undirected_graph}
 \end{figure}
 
-Đồ thị có thể được sử dụng để mô hình hóa rất nhiều bài toán trong thực tế: \cite{sedgewick2011algorithms}
+Đồ thị có thể được sử dụng để mô hình hóa rất nhiều bài toán trong thực tế \cite{sedgewick2011algorithms}:
 \begin{itemize}
 	\item Bản đồ: Một bản đồ giữa các thành phố có thể là một đồ thị, trong đó các thành phố là các đỉnh, đường đi từ thành phố A tới thành phố B gần đó là một cạnh của đồ thị. Việc mô hình hóa như này có thể giúp giải các bài toán như xác định đường đi ngắn nhất từ một thành phố tới thành phố khác bằng các giải thuật trên đồ thị.
 	\item Internet: Các trang web trên mạng là các đỉnh của đồ thị và các hyperlink là các cạnh của đồ thị. Các thuật toán duyệt đồ thị đóng vai trò quan trọng trong các bộ công cụ tìm kiếm.
@@ -310,7 +324,6 @@ Duyệt đồ thị được hiểu là ghé thăm tất cả các đỉnh ở �
 Bên dưới là thuật toán \Gls{BFS}., là thuật toán sẽ thăm tất cả các đỉnh ở mức hiện tại (các nút kề với đỉnh đã xét gần nhất) trước khi thăm các đỉnh ở mức khác.
 
 \begin{algorithm}
-	%\renewcommand{\thealgorithm}{}
 	\caption{Breadth-first search}\label{euclid}
 	\begin{algorithmic}[1]
 		\Procedure{BFS}{$Graph, Key$}
@@ -333,7 +346,6 @@ Bên dưới là thuật toán \Gls{BFS}., là thuật toán sẽ thăm tất c�
 
 
 \begin{algorithm}
-	%\renewcommand{\thealgorithm}{}
 	\caption{Depth-first search}\label{euclid}
 	\begin{algorithmic}[1]
 		\Procedure{DFS}{$Graph, Key$}
@@ -395,12 +407,12 @@ Cây, trong mối liên quan với đồ thị, có thể được xem như mộ
 Các thành phần của một cây khi quan sát từ hình \ref{fig:tree} bên trên sẽ bao gồm: nút A là nút gốc, nút B, C là các nút con của và tương ứng nút A là cha của chúng (nút C là cha của 2 nút D,E và D,E là con của C). (Vì chúng ta chỉ đề cập tới cây tổng quát nên sẽ không có khái niệm con trái hay con phải). Các nút D,E được gọi là các nút lá nếu không có bất kỳ con nào. Một cây có nhiều mức, các cây cùng một cha sẽ cùng một mức (hoặc có cha cùng mức thì cũng có cùng mức) và sẽ có mức lớn hơn mức cha là 1. Bắt đầu từ nút gốc có mức 0, các nút B,C sẽ có mức 1, D,E có mức 2. Chiều cao của cây là đường dài nhất đi từ gốc tới nút lá bất kỳ, hay được tính đơn giản bằng mức sâu nhất.
 
 \subsubsection{Cây Steiner}
-Trong phạm vi tổng quát, cây Steiner là một tập các bài toán trong lĩnh vực tổi ưu hóa tổ hợp. Nhưng để tập trung vào vấn đề tiếp theo sẽ giải quyết ở chương 2, chúng ta chỉ quan tâm tới cây Steiner trong đồ thị, có thể được diễn giải một cách đơn giản như sau: một cây Steiner là một cây có trọng số nhỏ nhất chứa tất cả những đỉnh cần thiết (là một tập con của tất cả các đỉnh trong đồ thị), cây có thể bao gồm các đỉnh khác hoặc không. Khái niệm trọng số nhỏ nhất ở đây có thể hiểu là tối thiểu hóa hàm mục tiêu (các mục tiêu có thể là thời gian sống trong mạng, độ bao phủ của các nút cảm biến, độ trễ của đường truyền) đối với các bài toán trong mạng cảm biến không dây. Khi số lượng nút Steiner (các nút bắt buộc xuất hiện trong cây) bằng với số nút trong đồ thị, ta có thể quy về bài toán cây khung nhỏ nhất. Còn khi chỉ có 2 nút Steiner thì ta có thể quy về bài toán đường đi ngắn nhất. Mặc dù vậy, tuy 2 bài toán trên có thể giải trong thời gian đa thức, cây Steiner lại thuộc lớp NP-complete.\cite{karp1972reducibility}
+Trong phạm vi tổng quát, cây Steiner là một tập các bài toán trong lĩnh vực tổi ưu hóa tổ hợp. Nhưng để tập trung vào vấn đề tiếp theo sẽ giải quyết ở chương 2, chúng ta chỉ quan tâm tới cây Steiner trong đồ thị, có thể được diễn giải một cách đơn giản như sau: một cây Steiner là một cây có trọng số nhỏ nhất chứa tất cả những đỉnh cần thiết (là một tập con của tất cả các đỉnh trong đồ thị), cây có thể bao gồm các đỉnh khác hoặc không. Khái niệm trọng số nhỏ nhất ở đây có thể hiểu là tối thiểu hóa hàm mục tiêu (các mục tiêu có thể là thời gian sống trong mạng, độ bao phủ của các nút cảm biến, độ trễ của đường truyền) đối với các bài toán trong mạng cảm biến không dây. Khi số lượng nút Steiner (các nút bắt buộc xuất hiện trong cây) bằng với số nút trong đồ thị, ta có thể quy về bài toán cây khung nhỏ nhất. Còn khi chỉ có 2 nút Steiner thì ta có thể quy về bài toán đường đi ngắn nhất. Mặc dù vậy, tuy 2 bài toán trên có thể giải trong thời gian đa thức, cây Steiner lại thuộc lớp NP-complete \cite{karp1972reducibility}.
 
 \section{Tổng kết}
 Chương 1 bao gồm những kiến thức tổng quan về lĩnh vực mà đồ án nghiên cứu (mạng cảm biến không dây), và một số phạm trù khoa học máy tính liên quan tới bài toán đặt ra (đồ thị và cây Steiner). Cụ thể, phần 1.1 cho biết những giao thức mạng thường được sử dụng, ứng dụng và khó khăn khi triển khai một mạng cảm biến không dây trong thực tế. Kiến thức trong phần này có thể giúp những người mới tiếp cận dễ dàng hơn với một trong những lĩnh vực đang thu hút nhiều sự quan tâm của giới nghiên cứu cũng như có cái nhìn bao quát về sự hiện diện của mạng cảm biến không dây trong đời sống. Phần 1.2 đóng vai trò như sự bổ sung kiến thức cho phần diễn giải chi tiết ở chương sau, đặc biệt là phần giải mã của các thuật toán sẽ được áp dụng đã được trình bày chi tiết, cụ thể là thuật toán \gls{BFS} để duyệt cây và Kruskal để xây dựng cây con nhỏ nhất.
 
-\chapter{Tối ưu đa mục tiêu trên cây tổng hợp dữ liệu} % thay đổi tiêu đề
+\chapter{Bài toán tối ưu cây Steiner tổng hợp dữ liệu đa mục tiêu}
 Sự tiến bộ của công nghệ giúp sản xuất các thiết bị cảm biến ngày một hiện đại, chiếm ít không gian, hiệu năng cao, giá thành rẻ, hỗ trợ triển khai số lượng lớn trên cùng một không gian. Đi liền với đó là khó khăn trong việc tận dụng hiệu quả các nút cảm biến khi năng lượng, khả năng tính toán, bộ nhớ vẫn còn hạn chế. Tổng hợp dữ liệu được nghiên cứu nhằm giải quyết khó khăn này. Nhiệm vụ này được định nghĩa như một quy trình toàn cục bao gồm việc tập trung và điều hướng thông tin thông qua các lớp mạng, xử lý dữ liệu tại các nút trung gian nhằm giảm thiểu việc tiêu thụ năng lượng, qua đó duy trì thời gian sống toàn mạng \cite{fasolo2007network}.
 
 
@@ -442,15 +454,15 @@ Năng lượng tổng hợp dữ liệu $E_{DA}$ tại các nút là một hằn
 		\item
 		Bán kính giao tiếp các nút là $r_{c}$.
 	\end{itemize}
-	Một nút u có thể giao tiếp với một nút v nếu nút u nằm trong bán kính truyền thông của nút v và ngược lại. Bán kính truyền thông giữa hai nút là tổng của bán kính giao tiếp của từng nút, trong bài toán hiện tại là $2*r_{c}$. Do đó, mạng cảm biến không dây có thể được mô hình dưới dạng đồ thị $G = (V,E)$ trong đó V là tập các nút (bao gồm cả nút cảm biến và nút trung gian) và E là tập các cặp nút (u,v) có khả năng giao tiếp với nhau. Tập các nút Steiner được kí hiệu là RN (|RN| $\leq$ m).
+	Một nút u có thể giao tiếp với một nút v nếu nút u nằm trong bán kính truyền thông của nút v và ngược lại. Bán kính truyền thông giữa hai nút là tổng của bán kính giao tiếp của từng nút, trong bài toán hiện tại là $2*r_{c}$. Do đó, mạng cảm biến không dây có thể được mô hình dưới dạng đồ thị $G = (V,E)$ trong đó V là tập các nút (bao gồm cả nút cảm biến và nút trung gian) và E là tập các cặp nút (u,v) có khả năng giao tiếp với nhau. Tập các nút trung gian trong cây Steiner được kí hiệu là RN (|RN| $\leq$ m).
 	
 	\item
-	Đầu ra:  Cây khung T = $(V_{n+|RN|},E_{n+|RN|})$ với n là số lượng các nút cảm biến.
+	Đầu ra:  Cây khung Steiner T = $(V_{n+|RN|},E_{n+|RN|})$ với n là số lượng các nút cảm biến.
 	
 	\item
 	Các mục tiêu:
 	\begin{itemize}
-		\item Tổng năng lượng tiêu thụ
+		\item{Tổng năng lượng tiêu thụ} \\
 		Vấn đề lớn nhất đối với các mạng cảm biến không dây là việc suy hao năng lượng của các nút cảm biến. Bởi các nút cảm biến dự trữ rất ít năng lượng, việc áp dụng các thuật toán nhằm tối thiểu hóa năng lượng tiêu thụ trong quá trình vận hành là vô cùng cần thiết. Năng lượng tiêu thụ của cây tổng hợp dữ liệu có thể được tính bằng tổng năng lượng trên tất cả các nút.
 		
 		\begin{equation}
@@ -459,7 +471,7 @@ Năng lượng tổng hợp dữ liệu $E_{DA}$ tại các nút là một hằn
 		
 		$C_{num_i}$ là tất các nút con của nút thứ i trong cây tổng hợp dữ liệu. Năng lượng tiêu thụ trên mỗi nút sẽ bằng tổng của năng lượng truyền gói tin cho nút cha của nó và năng lượng tổng hợp (bao gồm năng lượng nhận gói tin và năng lượng tổng hợp dữ liệu) từ tất cả các nút con.
 		
-		\item{Thời gian sống của mạng}
+		\item{Thời gian sống của mạng} \\
 		Một trong những mục tiêu khi triển khai mạng cảm biến không dây là duy trì thời gian sống toàn mạng. Bởi đặc điểm gồ ghề, khó tiếp cận của một số địa hình khi triển khai gây khó khăn cho việc thay thế, khắc phục sự cố như hết pin, tai nạn hay phá hoại từ bên ngoài mà việc duy trì tính ổn định là vô cùng cần thiết. Tùy thuộc vào yêu cầu thực tế mà định nghĩa thời gian sống của mạng cảm biến thay đổi: thời gian mà mạng cảm biến vẫn còn duy trì việc giao tiếp như thông thường, thời gian mà mạng cảm biến vẫn còn bao quát một không gian, thời gian từ khi bắt đầu tới khi việc thu thập dữ liệu lần đầu thất bại. Khi một nút cảm biến tiêu thụ hết năng lượng thì cây tổng hợp dữ liệu phải tự điều chỉnh lại. Thời gian sống của mạng, do đó, có thể tính toán qua thời gian sống tối thiểu của một nút trên cây.
 		
 		\begin{equation}
@@ -472,7 +484,7 @@ Năng lượng tổng hợp dữ liệu $E_{DA}$ tại các nút là một hằn
 		\end{equation}
 		$E^i_{residual}$ là năng lượng còn lại của nút thứ i.
 		
-		\item{Độ trễ khi tổng hợp dữ liệu}
+		\item{Độ trễ khi tổng hợp dữ liệu} \\
 		Nhược điểm khi sử dụng mô hình tổng hợp dữ liệu dạng cây là thời gian tổng hợp dữ liệu lớn, gây chậm trễ trong quá trình xử lý thông tin. Theo mô hình được đề xuất, các nút trung gian không chỉ có vai trò chuyển phát dữ liệu lên nút cha mà còn phải tổng hợp dữ liệu từ các nút con. Một nút cũng chỉ có thể bắt đầu chuyển dữ liệu khi đã tổng hợp dữ liệu từ tất cả các nút con. Một thực tể rõ ràng là sự phân phối không đồng đều giữa các nút con sẽ dẫn tới tình trạng chờ đợi không cần thiết ở các nút còn lại. Các cách giải quyết nhược điểm này sẽ được bàn kĩ hơn ở phần bên dưới.
 		
 		Từ định nghĩa bên trên, công thức tính độ trễ cho toàn mạng sẽ tương ứng với tổng độ trễ trên từng lớp, và độ trễ trên mỗi lớp sẽ là độ trễ lớn nhất của một nút ở lớp đó.
@@ -482,14 +494,14 @@ Năng lượng tổng hợp dữ liệu $E_{DA}$ tại các nút là một hằn
 		\end{equation}
 		$CN_{i-1}$ là số lượng nút con lớn nhất ứng với một nút ở lớp thứ $i-1$,  $Max(data_i)$ và $rate_i$ là kích thước lớn nhất mà dữ liệu có thể truyền và tốc độ truyền ở lớp thứ $i$.
 		
-		\item{Độ nhiễu trong giao tiếp}
+		\item{Độ nhiễu trong giao tiếp} \\
 		Các nút trong mạng cảm biến sử dụng kết nối không dây để giao tiếp, hệ quả trực tiếp là phát sinh vấn đề nhiễu trong truyền và nhận dữ liệu. Vấn đề này xuất hiện khi trong bán kính giao tiếp của hai nút đang kết nối với nhau xuất hiện tín hiệu từ một nút thứ ba, gây xung đột trong quá trình truyền tin. Xung đột xảy ra bắt các nút cảm biến phải truyền lại gói tin, gây tổn hao năng lượng và ảnh hưởng tới chất lượng tổng hợp. Giảm thiểu số lượng nút ảnh hưởng trong phạm vi kết nối giữa hai nút, do đó là một trong những mục tiêu cần tối ưu khi thiết kế mạng cảm biến không dây. Công thức được suy ra trực tiếp từ định nghĩa này:
 		
 		\begin{equation}
-		f_4(x) = Max|Cov_e|
+		f_4(x) = Max|cov_e|
 		\end{equation}
 		
-		với $$Cov_e = \{n \in V | \text{n là số lượng nút nằm trong D(x,$|x,y|$) hoặc D(y,$|y,x|$)} \}$$
+		với $$cov_e = \{n \in V | \text{n là số lượng nút nằm trong D(x,$|x,y|$) hoặc D(y,$|y,x|$)} \}$$
 	\end{itemize}
 	
 	\item
@@ -540,10 +552,13 @@ Năng lượng tổng hợp dữ liệu $E_{DA}$ tại các nút là một hằn
 Nhóm tác giả trong \cite{lu2014construction} đề xuất sử dụng giải thuật \Gls{JPSO} để giải quyết bài toán. \Gls{JPSO} là một biến thể của \Gls{PSO} trong miền không gian rời rạc. Điểm nổi bật của giải thuật đề xuất là sử dụng mã hóa hai lớp lên mỗi cá thể. Lớp thứ nhất là một dãy nhị phân sắp xếp thep thứ tự tăng dần của các nút cảm biến, với giá trị 1 biểu thị nút đó được sử dụng và 0 là ngược lại. Lớp thứ hai là một chuỗi tuần tự số thứ tự của các nút được sử dụng, được giải mã thành cây khung dựa vào \Gls{EWD}. Quy trình của thuật toán là sử dụng một cửa sổ có độ lớn là 2, dịch từng bước một từ trái sang phải. Ở mỗi bước dịch xác định một cạnh tạo bởi 2 nút trong mạng cảm biến. Cạnh này sẽ được thêm vào cây khung nếu không xuất hiện chu trình. Làm tuần tự tới khi kết thúc toàn bộ lớp thứ 2 sẽ thu được một cây khung thỏa mãn.
 
 
-\chapter{Giải thuật di truyền và giải thuật di truyền sắp xếp không trội cho bài toán đa mục tiêu trên cây tổng hợp dữ liệu}
-Giải thuật di truyền được trình bày trong mã giả \ref{alg:ga}.
+\chapter{Giải thuật di truyền và giải thuật di truyền sắp xếp không trội giải bài toán cây Steiner tổng hợp dữ liệu đa mục tiêu}
 
 \section{Giải thuật di truyền}
+Giải thuật di truyền lấy ý tưởng từ thuyết tiến hoá của Darwin, các cá thể với khả năng sinh tồn mạnh mới có thể tồn tại qua các thế hệ tiến hoá. Bắt đầu với một quần thể được khởi tạo, các cá thể mới được sinh ra qua quá trình giao phối và đột biến, và kết thúc một thế hệ ở bước chọn lọc tự nhiên nhằm loại đi các cá thể yếu, duy trì một quần thể với các cá thể có khả năng sinh tồn mạnh nhất. Giải thuật di truyền sử dụng các khái niệm khởi tạo quần thể, lai ghép, đột biến, và chọn lọc nhằm mô phỏng quá trình này, với mục tiêu đạt được cá thể tốt nhất sau khi giải thuật kết thúc.
+
+Mã giả của giải thuật di truyền được trình bày trong \ref{alg:ga}.
+
 \begin{algorithm}[H]
 	\caption{Giải thuật di truyền}\label{alg:ga}
 	\begin{algorithmic}[1]
@@ -575,9 +590,16 @@ Giải thuật di truyền được trình bày trong mã giả \ref{alg:ga}.
 Giải thuật sử dụng tập cạnh để biểu diễn một cá thể.
 
 \begin{figure}[H]
-	\centering
-	\includegraphics[scale=1.0]{images/graph}
-	\caption{Mã hóa một cá thể}\label{fig:encode}
+	\begin{minipage}{0.8\textwidth}
+		\centering
+		\includegraphics[width=0.6\linewidth]{images/graph}
+		\caption{Mã hóa một cá thể}\label{fig:encode}
+	\end{minipage}\hfill
+	\begin{minipage}{0.2\textwidth}
+		\centering
+		\includegraphics[width=1.2\linewidth]{images/diagram-note.png}
+		\label{fig:note}
+	\end{minipage}
 \end{figure}
 
 Hình \ref{fig:encode} mô tả mã hóa của một cá thể. Tập cạnh biểu diễn là: \{(0,7), (0,8), (0,9), (0,16), (7,6), (6,11), (9,4), (9,5), (16,15), (16, 17), (16,21), (18,14), (18,19), (18,23), (18,24)\}.
@@ -599,7 +621,7 @@ Do các mục tiêu trong bài đều được đánh giá ngang nhau về mức
 
 Lai ghép trong giải thuật tiến hóa được sử dụng nhằm trao đổi thông tin giữa các cá thể trong một quần thể, tổng hợp các tính trạng trội để tạo ra các cá thể ở thế hệ sau tốt hơn thế hệ trước. Đầu tiên, tập các cạnh chung giữa hai cá thể được lựa chọn để thêm vào cá thể con. Tập cạnh này được coi như các "tính chất di truyền mạnh" cần được di truyền lại cho thế hệ sau. Để hoàn thiện cá thể con, tập thứ hai bao gồm các cạnh chỉ xuất hiện trong cá thể cha hoặc mẹ được xây dựng, sắp xếp theo thứ tự tăng dần của độ lớn và đưa vào cá thể con cho tới khi thu được một cây Steiner. Hình 3.2 mô tả quy trình lai ghép được áp dụng đối với một cặp cá thể cha và mẹ.
 
-\begin{figure}[hpt]
+\begin{figure}[H]
 	\includegraphics[scale=1.0]{images/crossover.png}
 	\caption{Áp dụng toán tử lai ghép lên hai cá thể cha mẹ. Các cạnh xuất hiện trong cả cha và mẹ được tô đỏ ở cá thể con.} \label{fig:cross}
 \end{figure}
@@ -610,7 +632,7 @@ Lai ghép trong giải thuật tiến hóa được sử dụng nhằm trao đ�
 Đột biến hỗ trợ tìm kiếm ở những phạm vi mới, không nằm trong lân cận của vùng đang tìm kiếm. Tuy nhiên cần lựa chọn tỉ lệ đột biến một cách hợp lý, vì quy trình tìm kiếm cần càng rộng càng tốt ở những thế hệ đầu, nhưng càng nhanh càng tốt ở những thế hệ sau. Tỉ lệ đột biến sẽ tỉ lệ nghịch với số thứ tự của thế hệ, thế hệ càng lớn thì càng ít cá thể được đột biến.
 Toán tử đột biến trong giải thuật đề xuất bắt đầu với việc lựa chọn hai nút u và v. Giả sử, không mất tính tổng quát, nút có độ sâu lớn hơn là v. Ta xóa cạnh nối giữa v và nút cha của nó, sau đó nối u với v. Bây giờ u sẽ là cha của v trong cá thể mới. Quy trình này mang tới hai ưa điểm. Thứ nhất là sự toàn vẹn tính hợp lệ của cá thể khi chu trình chắc chắn sẽ không tồn tại. Thứ hai là các nút còn lại được giữ nguyên tính chất, không có gì cần thay đổi.
 
-\begin{figure}[hpt]
+\begin{figure}[H]
 	\centering
 	\includegraphics[scale=1.0]{images/mutation}
 	\caption{Ví dụ về toán tử đột biến}\label{fig:mutation}
@@ -649,7 +671,7 @@ Giải thuật di truyền sắp xếp không trội được trình bày trong 
 			\begin{itemize}
 				\item $Q_t \leftarrow$ Thực hiện lai ghép và đột biến trên $P_t$;
 				\item $R_t \leftarrow Q_t \cup P_t$;
-				\item $F \leftarrow$ Thực hiện sắp xếp nhanh trên $R_t$ (mã giả \ref{alg:fast_non_dominated_sort};
+				\item $F \leftarrow$ Thực hiện sắp xếp nhanh trên $R_t$ (mã giả \ref{alg:fast_non_dominated_sort});
 				\item $P_t+1 \leftarrow$ Lựa chọn quần thể cho thế hệ t+1 (mã giả \ref{alg:select_parents});
 				\item $t \leftarrow t+1$;
 			\end{itemize}
@@ -778,8 +800,8 @@ Pen(x) = \begin{cases}
 Ở phương trình \ref{eq:fitness}, giá trị càng cao càng thể hiện mức độ tối ưu của lời giải.
 
 
-\section{Thực nghiệm}
-\subsection{Mô tả dữ liệu}
+\chapter{Thực nghiệm}
+\section{Mô tả dữ liệu}
 Kết quả thực nghiệm được tiến hành trên tập dữ liệu mô phỏng địa hình các tỉnh thành Việt Nam \cite{tam2018improving}. Tập dữ liệu có tất cả 12- bộ dữ liệu, bao gồm 10 địa hình được đánh thứ tự từ T1 tới T10, mô tả ngắn gọn trong \ref{tab:terrain}, bán kính cảm biến của các nút trong mỗi bộ dữ liệu nhận 1 trong 4 giá trị: 25, 30, 45, hoặc 50 mét, các nút cảm biến được phân bố trên các địa hình theo 1 trong 3 phân phối: phân phối chuẩn, phân phối đều, hoặc phân phối gamma. Dữ liệu được xây dựng theo chuẩn Digital Elevation Model.
 
 \begin{table}[H]
@@ -802,7 +824,7 @@ Kết quả thực nghiệm được tiến hành trên tập dữ liệu mô ph
 	\end{tabular}}
 \end{table}
 
-\subsection{Tham số cố định}
+\section{Tham số cố định}
 Các tham số cố định được sử dụng trong quá trình thực nghiệm được đề cập trong bảng \ref{tab:1} và \ref{tab:2}.
 
 \begin{table}[H]
@@ -833,7 +855,7 @@ Các tham số cố định được sử dụng trong quá trình thực nghi�
 
 Các giải thuật được cài đặt bằng Python3 và chạy trên Intel Core i5-5200u 2.20 GHz, 8GB RAM, hệ điều hành Ubunutu 16.04.
 
-\subsection{Kết quả thực nghiệm của \gls{GA} và \gls{JPSO} trên các phân phối khác nhau}
+\section{Kết quả thực nghiệm của \gls{GA} và \gls{JPSO} trên các phân phối khác nhau}
 Dưới đây là kết quả thực nghiệm của giải thuật \gls{GA} và \gls{JPSO} nêu trong \cite{lu2014construction} khi áp dụng trên ba phân phối: phân phối chuẩn, phân phối đều và phân phối Gamma, với bán kính giao tiếp của các cảm biến đều là 30 mét.
 
 %\begin{figure}[!hbt]
@@ -847,19 +869,19 @@ Dưới đây là kết quả thực nghiệm của giải thuật \gls{GA} và 
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{images/MediumGamma30.png}
+	\includegraphics[width=0.7\textwidth]{images/medium_gamma.png}
 	\caption{Giá trị trung bình hàm mục tiêu của \gls{GA} và \gls{JPSO} trên phân phối Gamma.} \label{fig:medium_gamma}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{images/MediumNorm30.png}
+	\includegraphics[width=0.7\textwidth]{images/medium_normal.png}
 	\caption{Giá trị trung bình hàm mục tiêu của \gls{GA} và \gls{JPSO} trên phân phối chuẩn.} \label{fig:medium_norm}
 \end{figure}
 
 \begin{figure}[H]
 	\centering
-	\includegraphics[scale=0.5]{images/MediumUniform30.png}
+	\includegraphics[width=0.7\textwidth]{images/medium_uniform.png}
 	\caption{Giá trị trung bình hàm mục tiêu của \gls{GA} và \gls{JPSO} trên phân phối đều.} \label{fig:medium_uniform}
 \end{figure}
 
@@ -884,12 +906,12 @@ Nhận thấy trên cả ba phân phối, giá trị hàm mục tiêu thu đư�
 %	\caption{Độ cao của các địa hình trong tập dữ liệu.}\label{fig:terrain}
 %\end{figure}
 
-Bảng \ref{tab:exp_table} tổng hợp kết quả thực nghiệm của \gls{GA} và \gls{JPSO} trên 120 bộ dữ liệu, bao gồm 10 loại địa hình, 3 loại phân phối và 4 loại bán kính khác nhau.
+Bảng \ref{fig:exp_table} tổng hợp kết quả thực nghiệm của \gls{GA} và \gls{JPSO} trên 120 bộ dữ liệu, bao gồm 10 loại địa hình, 3 loại phân phối và 4 loại bán kính khác nhau.
 
 \begin{center}
-\begin{table*}[!htbp] \label{tab:exp_table}
+\begin{table*}[htb]
 	\centering
-	\caption{Bảng tổng hợp kết quả thực nghiệm.}
+	\caption{Bảng tổng hợp giá trị hàm mục tiêu.\label{fig:exp_table}}
 \begin{adjustwidth}{-1.8cm}{}
 \begin{tabular}{|l|l|l|l|l|l|l|l|l|l|}
 	\hline
@@ -1140,7 +1162,7 @@ Dưới đây là hình vẽ biên Pareto trên các bộ dữ liệu với phâ
 \end{itemize}
 
 \chapter*{Kết luận}
-Đồ án tập trung nghiên cứu về giải thuật tiến hoá trênn mạng cảm biến không dây, cụ thể là giải thuật di truyền và giải thuật di truyền sắp xếp không trội. Kiến thức tổng quan về mạng cảm biến không dây, bao gồm kiến trúc các loại mạng cảm biến, cấu trúc một nút cảm biến được đề cập ở chương 1, các mục tiêu được quan tâm và nghiên cứu của đồ án được đề cập ở chương 2. Chương 3 và chương 4 là phần giải thích và trình bày kết quả khi thực nghiệm với hai giải thuật, giải thuật di truyền và giải thuật di truyền sắp xếp không trội.
+Đồ án tập trung nghiên cứu về giải thuật tiến hoá trên mạng cảm biến không dây, cụ thể là giải thuật di truyền và giải thuật di truyền sắp xếp không trội. Kiến thức tổng quan về mạng cảm biến không dây, bao gồm kiến trúc các loại mạng cảm biến, cấu trúc một nút cảm biến được đề cập ở chương 1, các mục tiêu được quan tâm và nghiên cứu của đồ án được đề cập ở chương 2. Chương 3 và chương 4 là phần giải thích và trình bày kết quả khi thực nghiệm với hai giải thuật, giải thuật di truyền và giải thuật di truyền sắp xếp không trội.
 
 
 Đồ án có thể được mở rộng theo ba hướng. Hướng thứ nhất là áp dụng các giải thuật tiến hoá đa mục tiêu khác trên bộ dữ liệu hiện có để so sánh với kết quả hiện tại, lựa chọn giải thuật mang lại kết quả tốt nhất. Hướng thứ hai là thay đổi quy trình thực hiện của hai giải thuật đã áp dụng, có thể thay đổi ở bước mã hoá, lai ghép hoặc đột biến. Hướng còn lại là kết hợp từ cả hai hướng trên.

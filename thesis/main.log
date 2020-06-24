@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.17)  18 JUN 2020 18:31
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2020.3.17)  24 JUN 2020 11:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -632,6 +632,47 @@ File: t5cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 (/usr/local/texlive/2019/texmf-dist/tex/latex/vntex/vncaps.tex
 File: vncaps.tex 2006/06/07 v1.1 Captions in Vietnamese
 ))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/chngcntr/chngcntr.sty
+Package: chngcntr 2018/04/09 v1.1a change counter resetting
+Package chngcntr Info: \counterwithout already defined.
+(chngcntr)             Quitting chngcntr on input line 21.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/mathptmx.sty
+Package: mathptmx 2005/04/12 PSNFSS-v9.2a Times w/ Math, improved (SPQR, WaS) 
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ztmcm/m/n on input line 28.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/ztmcm/m/it on input line 29.
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/ztmcm/m/n on input line 30.
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/ztmcm/m/n on input line 31.
+\symbold=\mathgroup6
+\symitalic=\mathgroup7
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/ptm/bx/n on input line 34.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/ptm/m/it on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/ptm/m/it on input line 35.
+LaTeX Info: Redefining \hbar on input line 50.
+)
 (/usr/local/texlive/2019/texmf-dist/tex/latex/glossaries/base/glossaries.sty
 Package: glossaries 2019/01/06 v4.42 (NLCT)
 
@@ -816,6 +857,64 @@ Package: changepage 2009/10/20 v1.0c check page and change page layout
 \c@cp@cntr=\count308
 \cp@tempcnt=\count309
 )
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2018/10/06 v3.3-154 Customizing captions (AR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2018/09/12 v1.8c caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 64.
+\captionmargin=\dimen176
+\captionmargin@=\dimen177
+\captionwidth=\dimen178
+\caption@tempdima=\dimen179
+\caption@indent=\dimen180
+\caption@parindent=\dimen181
+\caption@hangindent=\dimen182
+)
+\c@caption@flags=\count310
+\c@ContinuedFloat=\count311
+Package caption Info: float package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2018/08/26 v1.4-95 longtable captions (AR)
+)
+Package caption Info: supertabular package is loaded.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/04/16 v5.8 Page Geometry
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count312
+\Gm@cntv=\count313
+\c@Gm@tempcnt=\count314
+\Gm@bindingoffset=\dimen183
+\Gm@wd@mp=\dimen184
+\Gm@odd@mp=\dimen185
+\Gm@even@mp=\dimen186
+\Gm@layoutwidth=\dimen187
+\Gm@layoutheight=\dimen188
+\Gm@layouthoffset=\dimen189
+\Gm@layoutvoffset=\dimen190
+\Gm@dimlist=\toks50
+)
+
+Package Fancyhdr Warning: \fancyhead's `E' option without twoside option is use
+less on input line 26.
+
+
+Package Fancyhdr Warning: \fancyfoot's `E' option without twoside option is use
+less on input line 27.
+
 (./glossaries.tex) (./main.aux
 
 LaTeX Warning: Label `euclid' multiply defined.
@@ -829,33 +928,37 @@ LaTeX Warning: Label `euclid' multiply defined.
 )
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
- (/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Checking defaults for T5/cmr/m/n on input line 43.
+LaTeX Font Info:    ... okay on input line 43.
+LaTeX Font Info:    Try loading font information for T5+ptm on input line 43.
+ (/usr/local/texlive/2019/texmf-dist/tex/latex/vntex/t5ptm.fd
+File: t5utm.fd 2005/08/24 Fontinst v1.929 font definitions for T5/ptm.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count310
-\scratchdimen=\dimen176
+\scratchcounter=\count315
+\scratchdimen=\dimen191
 \scratchbox=\box85
-\nofMPsegments=\count311
-\nofMParguments=\count312
-\everyMPshowfont=\toks50
-\MPscratchCnt=\count313
-\MPscratchDim=\dimen177
-\MPnumerator=\count314
-\makeMPintoPDFobject=\count315
-\everyMPtoPDFconversion=\toks51
+\nofMPsegments=\count316
+\nofMParguments=\count317
+\everyMPshowfont=\toks51
+\MPscratchCnt=\count318
+\MPscratchDim=\dimen192
+\MPnumerator=\count319
+\makeMPintoPDFobject=\count320
+\everyMPtoPDFconversion=\toks52
 ) (/usr/local/texlive/2019/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -887,10 +990,6 @@ Package ifluatex Info: LuaTeX not detected.
 (/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2018/09/10 v0.29 Utility functions of pdfTeX for LuaTeX (HO
 )
-
-(/usr/local/texlive/2019/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2018/09/07 v3.3 Provides the ifpdf switch
-)
 Package pdftexcmds Info: LuaTeX not detected.
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
@@ -907,50 +1006,118 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: includehead includefoot heightrounded 
+* h-part:(L,W,R)=(99.58464pt, 426.79135pt, 71.13188pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=664.5pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
+* \topmargin=-15.36449pt
+* \headheight=17.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+\c@definition=\count321
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <12> not available
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 57.
 <./images/logo.jpg, id=1, 401.5pt x 592.2125pt>
 File: ./images/logo.jpg Graphic file (type jpg)
 <use ./images/logo.jpg>
-Package pdftex.def Info: ./images/logo.jpg  used on input line 37.
+Package pdftex.def Info: ./images/logo.jpg  used on input line 58.
 (pdftex.def)             Requested size: 85.35826pt x 125.90448pt.
-LaTeX Font Info:    Try loading font information for T5+phv on input line 42.
-
-(/usr/local/texlive/2019/texmf-dist/tex/latex/vntex/t5phv.fd
-File: t5uhv.fd 2005/08/24 Fontinst v1.929 font definitions for T5/phv.
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <25> not available
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 61.
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <20> not available
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 62.
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <14> not available
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 63.
+LaTeX Font Info:    Try loading font information for OT1+ztmcm on input line 69
+.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ztmcm.fd
+File: ot1ztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OT1/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 44.
+LaTeX Font Info:    Try loading font information for OML+ztmcm on input line 69
+.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omlztmcm.fd
+File: omlztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OML/ztmcm.
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 44.
+LaTeX Font Info:    Try loading font information for OMS+ztmcm on input line 69
+.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsztmcm.fd
+File: omsztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMS/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OMX+ztmcm on input line 69
+.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omxztmcm.fd
+File: omxztmcm.fd 2000/01/03 Fontinst v1.801 font definitions for OMX/ztmcm.
+)
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 69.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/ot1ptm.fd
+File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 69.
+ [1
 
 {/usr/local/texlive/2019/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./image
 s/logo.jpg>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 64.
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <24.88> not available
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 83.
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <17.28> not available
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 84.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 88.
 
-(/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+(/usr/local/texlive/2019/texmf-dist/tex/latex/psnfss/omsptm.fd
+File: omsptm.fd 
 )
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 64.
-
-Overfull \hbox (20.80017pt too wide) in paragraph at lines 67--68
-[]\T5/cmr/bx/n/12 Email: \T5/cmr/m/n/12 tung.ts154282@sis.hust.edu.vn 
- []
-
-[2
+LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 88.
+ [2
 
 ]
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 91--106
-[]$ [] 
+Overfull \hbox (131.52141pt too wide) in paragraph at lines 114--129
+[]\T5/ptm/m/n/12 C¡c ^^_· xu§t v  k¸t qu£ trong ^^_ç ¡n n y ^^_·u l  x¡c thüc v
+  nguy¶n b£n. $[]$
  []
 
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <14.4> not available
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 129.
 
-Overfull \hbox (2.61049pt too wide) in paragraph at lines 107--123
+Overfull \hbox (2.28pt too wide) in paragraph at lines 130--146
 []$ [] 
  []
 
@@ -963,7 +1130,7 @@ Using TeX to sort glossary entries---this may take a while
 
 Package glossaries Warning: Empty glossary for \printnoidxglossary[type={acrony
 m}]. Rerun may be required (or you may have forgotten to use commands like \gls
-) on input line 164.
+) on input line 187.
 
 [7
 
@@ -987,436 +1154,443 @@ m}]. Rerun may be required (or you may have forgotten to use commands like \gls
 
  [12]
 Ch\uhorn \ohorn ng 1.
-[13
-
-] [14]
-<images/wsn_types.png, id=55, 853.1875pt x 359.3425pt>
-File: images/wsn_types.png Graphic file (type png)
-<use images/wsn_types.png>
-Package pdftex.def Info: images/wsn_types.png  used on input line 213.
-(pdftex.def)             Requested size: 426.79134pt x 179.75853pt.
-
-Overfull \hbox (36.79134pt too wide) in paragraph at lines 212--214
- [] 
- []
-
-[15 <./images/wsn_types.png>]
-<images/wsn_nodes.png, id=60, 289.8027pt x 203.8014pt>
-File: images/wsn_nodes.png Graphic file (type png)
-<use images/wsn_nodes.png>
-Package pdftex.def Info: images/wsn_nodes.png  used on input line 233.
-(pdftex.def)             Requested size: 284.54419pt x 227.62471pt.
- [16] [17 <./images/wsn_nodes.png>]
-<images/wsn_topology.png, id=69, 665.6067pt x 412.6617pt>
-File: images/wsn_topology.png Graphic file (type png)
-<use images/wsn_topology.png>
-Package pdftex.def Info: images/wsn_topology.png  used on input line 255.
-(pdftex.def)             Requested size: 426.78918pt x 227.61948pt.
-
-Overfull \hbox (36.78918pt too wide) in paragraph at lines 254--256
- [] 
- []
-
-[18 <./images/wsn_topology.png>] [19] [20]
-<images/undirected_graph.png, id=81, 405.4347pt x 138.0357pt>
-File: images/undirected_graph.png Graphic file (type png)
-<use images/undirected_graph.png>
-Package pdftex.def Info: images/undirected_graph.png  used on input line 291.
-(pdftex.def)             Requested size: 426.82018pt x 142.26682pt.
-
-Overfull \hbox (36.82018pt too wide) in paragraph at lines 290--292
- [] 
- []
-
-[21 <./images/undirected_graph.png>] [22]
-<images/tree.jpg, id=93, 936.49875pt x 906.38625pt>
-File: images/tree.jpg Graphic file (type jpg)
-<use images/tree.jpg>
-Package pdftex.def Info: images/tree.jpg  used on input line 390.
-(pdftex.def)             Requested size: 142.25497pt x 142.2587pt.
- [23] [24 <./images/tree.jpg>]
-[25]
-Ch\uhorn \ohorn ng 2.
-[26
-
-] [27] [28]
-Overfull \hbox (36.10394pt too wide) detected at line 492
-\OML/cmm/m/it/12 Cov[] \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 n \
-OMS/cmsy/m/n/12 2 \OML/cmm/m/it/12 V\OMS/cmsy/m/n/12 j[]g
- []
-
-[29] [30] [31] [32] [33]
-Ch\uhorn \ohorn ng 3.
-[34
+[1
 
 ]
-<images/graph.png, id=137, 158.39175pt x 129.48375pt>
+<images/wsn_types.png, id=50, 853.1875pt x 359.3425pt>
+File: images/wsn_types.png Graphic file (type png)
+<use images/wsn_types.png>
+Package pdftex.def Info: images/wsn_types.png  used on input line 227.
+(pdftex.def)             Requested size: 341.43437pt x 143.80573pt.
+LaTeX Font Info:    Font shape `T5/ptm/bx/n' in size <10> not available
+(Font)              Font shape `T5/ptm/b/n' tried instead on input line 228.
+ [2]
+<images/wsn_nodes.png, id=54, 297.0297pt x 203.0787pt>
+File: images/wsn_nodes.png Graphic file (type png)
+<use images/wsn_nodes.png>
+Package pdftex.def Info: images/wsn_nodes.png  used on input line 247.
+(pdftex.def)             Requested size: 284.55153pt x 227.62012pt.
+ [3 <./images/wsn_types.png>]
+<images/wsn_topology.png, id=60, 665.6067pt x 412.6617pt>
+File: images/wsn_topology.png Graphic file (type png)
+<use images/wsn_topology.png>
+Package pdftex.def Info: images/wsn_topology.png  used on input line 269.
+(pdftex.def)             Requested size: 341.43541pt x 227.61948pt.
+ [4 <./images/wsn_nodes.png>] [5 <./images/wsn_topology.png>] [6]
+<images/undirected_graph.png, id=72, 405.4347pt x 138.0357pt>
+File: images/undirected_graph.png Graphic file (type png)
+<use images/undirected_graph.png>
+Package pdftex.def Info: images/undirected_graph.png  used on input line 305.
+(pdftex.def)             Requested size: 341.45366pt x 142.26682pt.
+ [7 <./images/undirected_graph.png>] [8] [9]
+<images/tree.jpg, id=86, 936.49875pt x 906.38625pt>
+File: images/tree.jpg Graphic file (type jpg)
+<use images/tree.jpg>
+Package pdftex.def Info: images/tree.jpg  used on input line 402.
+(pdftex.def)             Requested size: 142.25497pt x 142.2587pt.
+ [10 <./images/tree.jpg>] [11]
+Ch\uhorn \ohorn ng 2.
+[12
+
+]
+
+Package Fancyhdr Warning: \headheight is too small (17.0pt): 
+Make it at least 31.12602pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[13] [14] [15] [16] [17]
+Ch\uhorn \ohorn ng 3.
+[18
+
+]
+<images/graph.png, id=120, 158.39175pt x 129.48375pt>
 File: images/graph.png Graphic file (type png)
 <use images/graph.png>
-Package pdftex.def Info: images/graph.png  used on input line 579.
-(pdftex.def)             Requested size: 158.39136pt x 129.48341pt.
- [35 <./images/graph.png>] [36]
-<images/crossover.png, id=144, 378.81525pt x 130.086pt>
+Package pdftex.def Info: images/graph.png  used on input line 595.
+(pdftex.def)             Requested size: 204.8627pt x 167.47333pt.
+<images/diagram-note.png, id=121, 123.5817pt x 94.6737pt>
+File: images/diagram-note.png Graphic file (type png)
+<use images/diagram-note.png>
+Package pdftex.def Info: images/diagram-note.png  used on input line 600.
+(pdftex.def)             Requested size: 102.42809pt x 78.46935pt.
+
+Overfull \hbox (17.07112pt too wide) in paragraph at lines 600--602
+ [][] 
+ []
+
+
+Package Fancyhdr Warning: \headheight is too small (31.12602pt): 
+Make it at least 45.62602pt.
+We now make it that large for the rest of the document.
+This may cause the page layout to be inconsistent, however.
+
+[19 <./images/graph.png> <./images/diagram-note.png>]
+<images/crossover.png, id=127, 378.81525pt x 130.086pt>
 File: images/crossover.png Graphic file (type png)
 <use images/crossover.png>
-Package pdftex.def Info: images/crossover.png  used on input line 603.
+Package pdftex.def Info: images/crossover.png  used on input line 625.
 (pdftex.def)             Requested size: 378.81432pt x 130.08566pt.
-<images/mutation.png, id=145, 445.665pt x 165.0165pt>
+ [20 <./images/crossover.png>]
+<images/mutation.png, id=131, 445.665pt x 165.0165pt>
 File: images/mutation.png Graphic file (type png)
 <use images/mutation.png>
-Package pdftex.def Info: images/mutation.png  used on input line 615.
+Package pdftex.def Info: images/mutation.png  used on input line 637.
 (pdftex.def)             Requested size: 445.66391pt x 165.01607pt.
 
-Overfull \hbox (55.66391pt too wide) in paragraph at lines 615--616
+Overfull \hbox (18.87256pt too wide) in paragraph at lines 637--638
  [][] 
  []
 
-[37 <./images/crossover.png>] [38 <./images/mutation.png>] [39] [40] [41]
+[21 <./images/mutation.png>] [22] [23] [24]
 
-LaTeX Warning: Reference `lu2014construction' on page 42 undefined on input lin
-e 758.
+LaTeX Warning: Reference `lu2014construction' on page 25 undefined on input lin
+e 780.
 
-[42]
-<images/MediumGamma30.png, id=165, 362.3136pt x 217.7736pt>
-File: images/MediumGamma30.png Graphic file (type png)
-<use images/MediumGamma30.png>
-Package pdftex.def Info: images/MediumGamma30.png  used on input line 850.
-(pdftex.def)             Requested size: 181.15636pt x 108.88652pt.
- [43]
-<images/MediumNorm30.png, id=170, 362.3136pt x 217.7736pt>
-File: images/MediumNorm30.png Graphic file (type png)
-<use images/MediumNorm30.png>
-Package pdftex.def Info: images/MediumNorm30.png  used on input line 856.
-(pdftex.def)             Requested size: 181.15636pt x 108.88652pt.
-<images/MediumUniform30.png, id=171, 362.3136pt x 217.7736pt>
-File: images/MediumUniform30.png Graphic file (type png)
-<use images/MediumUniform30.png>
-Package pdftex.def Info: images/MediumUniform30.png  used on input line 862.
-(pdftex.def)             Requested size: 181.15636pt x 108.88652pt.
- [44 <./images/MediumGamma30.png> <./images/MediumNorm30.png> <./images/MediumU
-niform30.png>] [45]
-Overfull \hbox (51.32137pt too wide) in paragraph at lines 894--935
-[][] 
- []
+[25]
+Ch\uhorn \ohorn ng 4.
+[26
 
-[46]
-<images/ga-dem1.png, id=184, 702.625pt x 451.6875pt>
+]
+<images/medium_gamma.png, id=151, 429.7656pt x 230.7822pt>
+File: images/medium_gamma.png Graphic file (type png)
+<use images/medium_gamma.png>
+Package pdftex.def Info: images/medium_gamma.png  used on input line 872.
+(pdftex.def)             Requested size: 298.75264pt x 160.43365pt.
+<images/medium_normal.png, id=152, 429.7656pt x 230.3004pt>
+File: images/medium_normal.png Graphic file (type png)
+<use images/medium_normal.png>
+Package pdftex.def Info: images/medium_normal.png  used on input line 878.
+(pdftex.def)             Requested size: 298.75264pt x 160.09872pt.
+<images/medium_uniform.png, id=153, 429.7656pt x 230.3004pt>
+File: images/medium_uniform.png Graphic file (type png)
+<use images/medium_uniform.png>
+Package pdftex.def Info: images/medium_uniform.png  used on input line 884.
+(pdftex.def)             Requested size: 298.75264pt x 160.09872pt.
+ [27 <./images/medium_gamma.png> <./images/medium_normal.png>] [28 <./images/me
+dium_uniform.png>]
+<images/ga-dem1.png, id=163, 702.625pt x 451.6875pt>
 File: images/ga-dem1.png Graphic file (type png)
 <use images/ga-dem1.png>
-Package pdftex.def Info: images/ga-dem1.png  used on input line 947.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/ga-dem1.png  used on input line 969.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 947--948
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 969--970
  [][] 
  []
 
-<images/ga-dem2.png, id=185, 702.625pt x 451.6875pt>
+<images/ga-dem2.png, id=164, 702.625pt x 451.6875pt>
 File: images/ga-dem2.png Graphic file (type png)
 <use images/ga-dem2.png>
-Package pdftex.def Info: images/ga-dem2.png  used on input line 952.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/ga-dem2.png  used on input line 974.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 952--953
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 974--975
  [][] 
  []
 
-<images/ga-dem3.png, id=186, 702.625pt x 451.6875pt>
+[29]
+<images/ga-dem3.png, id=168, 702.625pt x 451.6875pt>
 File: images/ga-dem3.png Graphic file (type png)
 <use images/ga-dem3.png>
-Package pdftex.def Info: images/ga-dem3.png  used on input line 960.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/ga-dem3.png  used on input line 982.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 960--961
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 982--983
  [][] 
  []
 
-<images/ga-dem4.png, id=187, 702.625pt x 451.6875pt>
+<images/ga-dem4.png, id=169, 702.625pt x 451.6875pt>
 File: images/ga-dem4.png Graphic file (type png)
 <use images/ga-dem4.png>
-Package pdftex.def Info: images/ga-dem4.png  used on input line 965.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/ga-dem4.png  used on input line 987.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 965--966
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 987--988
  [][] 
  []
 
-<images/ga-dem5.png, id=188, 702.625pt x 451.6875pt>
+<images/ga-dem5.png, id=170, 702.625pt x 451.6875pt>
 File: images/ga-dem5.png Graphic file (type png)
 <use images/ga-dem5.png>
-Package pdftex.def Info: images/ga-dem5.png  used on input line 973.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/ga-dem5.png  used on input line 995.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 973--974
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 995--996
  [][] 
  []
 
-<images/ga-dem6.png, id=189, 702.625pt x 451.6875pt>
+<images/ga-dem6.png, id=171, 702.625pt x 451.6875pt>
 File: images/ga-dem6.png Graphic file (type png)
 <use images/ga-dem6.png>
-Package pdftex.def Info: images/ga-dem6.png  used on input line 978.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/ga-dem6.png  used on input line 1000.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 978--979
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1000--1001
  [][] 
  []
 
-[47 <./images/ga-dem1.png> <./images/ga-dem2.png> <./images/ga-dem3.png> <./ima
-ges/ga-dem4.png>]
-<images/ga-dem7.png, id=197, 702.625pt x 451.6875pt>
+<images/ga-dem7.png, id=172, 702.625pt x 451.6875pt>
 File: images/ga-dem7.png Graphic file (type png)
 <use images/ga-dem7.png>
-Package pdftex.def Info: images/ga-dem7.png  used on input line 986.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/ga-dem7.png  used on input line 1008.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 986--987
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1008--1009
  [][] 
  []
 
-<images/ga-dem8.png, id=198, 702.625pt x 451.6875pt>
+<images/ga-dem8.png, id=173, 702.625pt x 451.6875pt>
 File: images/ga-dem8.png Graphic file (type png)
 <use images/ga-dem8.png>
-Package pdftex.def Info: images/ga-dem8.png  used on input line 991.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/ga-dem8.png  used on input line 1013.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 991--992
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1013--1014
  [][] 
  []
 
-<images/ga-dem9.png, id=199, 702.625pt x 451.6875pt>
+[30 <./images/ga-dem1.png> <./images/ga-dem2.png> <./images/ga-dem3.png> <./ima
+ges/ga-dem4.png> <./images/ga-dem5.png> <./images/ga-dem6.png>]
+<images/ga-dem9.png, id=183, 702.625pt x 451.6875pt>
 File: images/ga-dem9.png Graphic file (type png)
 <use images/ga-dem9.png>
-Package pdftex.def Info: images/ga-dem9.png  used on input line 999.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/ga-dem9.png  used on input line 1021.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 999--1000
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1021--1022
  [][] 
  []
 
-<images/ga-dem10.png, id=200, 702.625pt x 451.6875pt>
+<images/ga-dem10.png, id=184, 702.625pt x 451.6875pt>
 File: images/ga-dem10.png Graphic file (type png)
 <use images/ga-dem10.png>
-Package pdftex.def Info: images/ga-dem10.png  used on input line 1004.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/ga-dem10.png  used on input line 1026.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1004--1005
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1026--1027
  [][] 
  []
 
-<images/no-dem1.png, id=201, 702.625pt x 451.6875pt>
+<images/no-dem1.png, id=185, 702.625pt x 451.6875pt>
 File: images/no-dem1.png Graphic file (type png)
 <use images/no-dem1.png>
-Package pdftex.def Info: images/no-dem1.png  used on input line 1013.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/no-dem1.png  used on input line 1035.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1013--1014
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1035--1036
  [][] 
  []
 
-<images/no-dem2.png, id=202, 702.625pt x 451.6875pt>
+<images/no-dem2.png, id=186, 702.625pt x 451.6875pt>
 File: images/no-dem2.png Graphic file (type png)
 <use images/no-dem2.png>
-Package pdftex.def Info: images/no-dem2.png  used on input line 1018.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/no-dem2.png  used on input line 1040.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1018--1019
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1040--1041
  [][] 
  []
 
-[48 <./images/ga-dem5.png> <./images/ga-dem6.png> <./images/ga-dem7.png> <./ima
-ges/ga-dem8.png> <./images/ga-dem9.png> <./images/ga-dem10.png>]
-<images/no-dem3.png, id=212, 702.625pt x 451.6875pt>
+<images/no-dem3.png, id=187, 702.625pt x 451.6875pt>
 File: images/no-dem3.png Graphic file (type png)
 <use images/no-dem3.png>
-Package pdftex.def Info: images/no-dem3.png  used on input line 1026.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/no-dem3.png  used on input line 1048.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1026--1027
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1048--1049
  [][] 
  []
 
-<images/no-dem4.png, id=213, 702.625pt x 451.6875pt>
+<images/no-dem4.png, id=188, 702.625pt x 451.6875pt>
 File: images/no-dem4.png Graphic file (type png)
 <use images/no-dem4.png>
-Package pdftex.def Info: images/no-dem4.png  used on input line 1031.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/no-dem4.png  used on input line 1053.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1031--1032
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1053--1054
  [][] 
  []
 
-<images/no-dem5.png, id=214, 702.625pt x 451.6875pt>
+[31 <./images/ga-dem7.png> <./images/ga-dem8.png> <./images/ga-dem9.png> <./ima
+ges/ga-dem10.png> <./images/no-dem1.png> <./images/no-dem2.png>]
+<images/no-dem5.png, id=199, 702.625pt x 451.6875pt>
 File: images/no-dem5.png Graphic file (type png)
 <use images/no-dem5.png>
-Package pdftex.def Info: images/no-dem5.png  used on input line 1039.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/no-dem5.png  used on input line 1061.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1039--1040
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1061--1062
  [][] 
  []
 
-<images/no-dem6.png, id=215, 702.625pt x 451.6875pt>
+<images/no-dem6.png, id=200, 702.625pt x 451.6875pt>
 File: images/no-dem6.png Graphic file (type png)
 <use images/no-dem6.png>
-Package pdftex.def Info: images/no-dem6.png  used on input line 1044.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/no-dem6.png  used on input line 1066.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1044--1045
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1066--1067
  [][] 
  []
 
-[49 <./images/no-dem1.png> <./images/no-dem2.png> <./images/no-dem3.png> <./ima
-ges/no-dem4.png>]
-<images/no-dem7.png, id=224, 702.625pt x 451.6875pt>
+<images/no-dem7.png, id=201, 702.625pt x 451.6875pt>
 File: images/no-dem7.png Graphic file (type png)
 <use images/no-dem7.png>
-Package pdftex.def Info: images/no-dem7.png  used on input line 1052.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/no-dem7.png  used on input line 1074.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1052--1053
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1074--1075
  [][] 
  []
 
-<images/no-dem8.png, id=225, 702.625pt x 451.6875pt>
+<images/no-dem8.png, id=202, 702.625pt x 451.6875pt>
 File: images/no-dem8.png Graphic file (type png)
 <use images/no-dem8.png>
-Package pdftex.def Info: images/no-dem8.png  used on input line 1057.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/no-dem8.png  used on input line 1079.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1057--1058
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1079--1080
  [][] 
  []
 
-<images/no-dem9.png, id=226, 702.625pt x 451.6875pt>
+<images/no-dem9.png, id=203, 702.625pt x 451.6875pt>
 File: images/no-dem9.png Graphic file (type png)
 <use images/no-dem9.png>
-Package pdftex.def Info: images/no-dem9.png  used on input line 1065.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/no-dem9.png  used on input line 1087.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1065--1066
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1087--1088
  [][] 
  []
 
-<images/no-dem10.png, id=227, 702.625pt x 451.6875pt>
+<images/no-dem10.png, id=204, 702.625pt x 451.6875pt>
 File: images/no-dem10.png Graphic file (type png)
 <use images/no-dem10.png>
-Package pdftex.def Info: images/no-dem10.png  used on input line 1070.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/no-dem10.png  used on input line 1092.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1070--1071
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1092--1093
  [][] 
  []
 
-<images/uu-dem1.png, id=228, 702.625pt x 451.6875pt>
+[32 <./images/no-dem3.png> <./images/no-dem4.png> <./images/no-dem5.png> <./ima
+ges/no-dem6.png> <./images/no-dem7.png> <./images/no-dem8.png>]
+<images/uu-dem1.png, id=214, 702.625pt x 451.6875pt>
 File: images/uu-dem1.png Graphic file (type png)
 <use images/uu-dem1.png>
-Package pdftex.def Info: images/uu-dem1.png  used on input line 1079.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/uu-dem1.png  used on input line 1101.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1079--1080
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1101--1102
  [][] 
  []
 
-<images/uu-dem2.png, id=229, 702.625pt x 451.6875pt>
+<images/uu-dem2.png, id=215, 702.625pt x 451.6875pt>
 File: images/uu-dem2.png Graphic file (type png)
 <use images/uu-dem2.png>
-Package pdftex.def Info: images/uu-dem2.png  used on input line 1084.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/uu-dem2.png  used on input line 1106.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1084--1085
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1106--1107
  [][] 
  []
 
-[50 <./images/no-dem5.png> <./images/no-dem6.png> <./images/no-dem7.png> <./ima
-ges/no-dem8.png> <./images/no-dem9.png> <./images/no-dem10.png>]
-<images/uu-dem3.png, id=240, 702.625pt x 451.6875pt>
+<images/uu-dem3.png, id=216, 702.625pt x 451.6875pt>
 File: images/uu-dem3.png Graphic file (type png)
 <use images/uu-dem3.png>
-Package pdftex.def Info: images/uu-dem3.png  used on input line 1092.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/uu-dem3.png  used on input line 1114.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1092--1093
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1114--1115
  [][] 
  []
 
-<images/uu-dem4.png, id=241, 702.625pt x 451.6875pt>
+<images/uu-dem4.png, id=217, 702.625pt x 451.6875pt>
 File: images/uu-dem4.png Graphic file (type png)
 <use images/uu-dem4.png>
-Package pdftex.def Info: images/uu-dem4.png  used on input line 1097.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/uu-dem4.png  used on input line 1119.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1097--1098
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1119--1120
  [][] 
  []
 
-<images/uu-dem5.png, id=242, 702.625pt x 451.6875pt>
+<images/uu-dem5.png, id=218, 702.625pt x 451.6875pt>
 File: images/uu-dem5.png Graphic file (type png)
 <use images/uu-dem5.png>
-Package pdftex.def Info: images/uu-dem5.png  used on input line 1105.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/uu-dem5.png  used on input line 1127.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1105--1106
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1127--1128
  [][] 
  []
 
-<images/uu-dem6.png, id=243, 702.625pt x 451.6875pt>
+<images/uu-dem6.png, id=219, 702.625pt x 451.6875pt>
 File: images/uu-dem6.png Graphic file (type png)
 <use images/uu-dem6.png>
-Package pdftex.def Info: images/uu-dem6.png  used on input line 1110.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/uu-dem6.png  used on input line 1132.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1110--1111
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1132--1133
  [][] 
  []
 
-[51 <./images/uu-dem1.png> <./images/uu-dem2.png> <./images/uu-dem3.png> <./ima
-ges/uu-dem4.png>]
-<images/uu-dem7.png, id=251, 702.625pt x 451.6875pt>
+[33 <./images/no-dem9.png> <./images/no-dem10.png> <./images/uu-dem1.png> <./im
+ages/uu-dem2.png> <./images/uu-dem3.png> <./images/uu-dem4.png>]
+<images/uu-dem7.png, id=229, 702.625pt x 451.6875pt>
 File: images/uu-dem7.png Graphic file (type png)
 <use images/uu-dem7.png>
-Package pdftex.def Info: images/uu-dem7.png  used on input line 1118.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/uu-dem7.png  used on input line 1140.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1118--1119
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1140--1141
  [][] 
  []
 
-<images/uu-dem8.png, id=252, 702.625pt x 451.6875pt>
+<images/uu-dem8.png, id=230, 702.625pt x 451.6875pt>
 File: images/uu-dem8.png Graphic file (type png)
 <use images/uu-dem8.png>
-Package pdftex.def Info: images/uu-dem8.png  used on input line 1123.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/uu-dem8.png  used on input line 1145.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1123--1124
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1145--1146
  [][] 
  []
 
-<images/uu-dem9.png, id=253, 702.625pt x 451.6875pt>
+<images/uu-dem9.png, id=231, 702.625pt x 451.6875pt>
 File: images/uu-dem9.png Graphic file (type png)
 <use images/uu-dem9.png>
-Package pdftex.def Info: images/uu-dem9.png  used on input line 1131.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/uu-dem9.png  used on input line 1153.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1131--1132
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1153--1154
  [][] 
  []
 
-<images/uu-dem10.png, id=254, 702.625pt x 451.6875pt>
+<images/uu-dem10.png, id=232, 702.625pt x 451.6875pt>
 File: images/uu-dem10.png Graphic file (type png)
 <use images/uu-dem10.png>
-Package pdftex.def Info: images/uu-dem10.png  used on input line 1136.
-(pdftex.def)             Requested size: 233.9994pt x 150.42888pt.
+Package pdftex.def Info: images/uu-dem10.png  used on input line 1158.
+(pdftex.def)             Requested size: 256.07416pt x 164.61989pt.
 
-Overfull \hbox (38.9994pt too wide) in paragraph at lines 1136--1137
+Overfull \hbox (42.67848pt too wide) in paragraph at lines 1158--1159
  [][] 
  []
 
-[52 <./images/uu-dem5.png> <./images/uu-dem6.png> <./images/uu-dem7.png> <./ima
+[34 <./images/uu-dem5.png> <./images/uu-dem6.png> <./images/uu-dem7.png> <./ima
 ges/uu-dem8.png> <./images/uu-dem9.png> <./images/uu-dem10.png>] (./main.bbl
-[53
+[35
 
-] [54
+]
+Underfull \hbox (badness 1748) in paragraph at lines 61--66
+[]\T5/ptm/m/n/12 Wendi Ra-biner Heinzel-man, Anan-tha Chan-drakasan, and Hari B
+al-akr-ish-nan.
+ []
 
-] [55]) [56] (./main.aux)
+[36
+
+] [37]) [38] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1425,33 +1599,30 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19078 strings out of 492616
- 328262 string characters out of 6129481
- 518045 words of memory out of 5000000
- 22671 multiletter control sequences out of 15000+600000
- 556898 words of font info for 64 fonts, out of 8000000 for 9000
+ 20823 strings out of 492616
+ 358137 string characters out of 6129481
+ 553282 words of memory out of 5000000
+ 24369 multiletter control sequences out of 15000+600000
+ 613003 words of font info for 105 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 47i,12n,65p,1990b,390s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/vntex/t5.enc}</usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/
-2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/201
-9/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019/t
-exmf-dist/fonts/type1/vntex/urwvn/uhvr8v.pfb></usr/local/texlive/2019/texmf-dis
-t/fonts/type1/vntex/vnr/vnb10.pfb></usr/local/texlive/2019/texmf-dist/fonts/typ
-e1/vntex/vnr/vnbx12.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/vntex/v
-nr/vncsc10.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/vntex/vnr/vnr10.
-pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/vntex/vnr/vnr12.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/vntex/vnr/vnti12.pfb>
-Output written on main.pdf (56 pages, 1336801 bytes).
+ 53i,12n,92p,1990b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/local/texlive/2019/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/local/t
+exlive/2019/texmf-dist/fonts/enc/dvips/vntex/t5.enc}</usr/local/texlive/2019/te
+xmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2019/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2019/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2019/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/t
+ype1/urw/symbol/usyr.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/vntex/
+urwvn/utmb8v.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr
+8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/vntex/urwvn/utmr8v.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb></usr/loca
+l/texlive/2019/texmf-dist/fonts/type1/vntex/urwvn/utmri8v.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/vntex/vnr/vnr17.pfb>
+Output written on main.pdf (50 pages, 1328084 bytes).
 PDF statistics:
- 331 PDF objects out of 1000 (max. 8388607)
- 176 compressed objects within 2 object streams
+ 299 PDF objects out of 1000 (max. 8388607)
+ 152 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 211 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 216 words of extra memory for PDF output out of 10000 (max. 10000000)
 

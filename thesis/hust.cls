@@ -8,21 +8,11 @@
 \usepackage{indentfirst} % for indentation like normal ベトナム人
 \usepackage{graphicx} % for graphics
 \usepackage{algorithm,algpseudocode} % for pseodocode (apt install texlive-science)
-\usepackage{fancyhdr}
 
 % footer
 \pagestyle{fancy}
 \fancyhead{}
-\fancyhf{}
-\fancyfoot[L]{Tran Son Tung - 20154282 - AS K60}
-\fancyfoot[R]{\thepage}
+\fancyfoot{}
+\cfoot{\thepage}
 \renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{1pt}
-
-\fancypagestyle{plain}{%
-	\fancyhf{}
-	\fancyfoot[L]{Tran Son Tung - 20154282 - AS K60}
-	\fancyfoot[R]{\thepage}
-	\renewcommand{\headrulewidth}{0pt}
-	\renewcommand{\footrulewidth}{1pt}
-}
+\renewcommand{\footrulewidth}{0pt}
